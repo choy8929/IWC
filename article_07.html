@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iwc</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/iwc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+
+<body>
+    <div class="popup search">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>TYPE IN THE KEY WORDS</h2>
+            <div>
+                <input type="search" placeholder="Please Enter Your Search Term">
+                <input type="submit" value="SEARCH">
+                <ul>
+                    <li><b>MOST COMMONLY SEARCHED</b></li>
+                    <li>CHRONOGRAPH</li>
+                    <li>TOP GUN</li>
+                    <li>AUTOMATIC</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="popup perm_identity">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>SIGN INTO IWC</h2>
+            <p>Please sign in here by entering your email address and your password</p>
+            <form action="index_after.html">
+                <ul>
+                    <li>
+                        <label for="userEmail">Email (Required)</label>
+                        <input type="email" id="userEmail" placeholder="Enter Your Email" required>
+                        <p>
+                            <span class="material-icons-outlined">info </span>
+                            Email Validation
+                        </p>
+                    </li>
+                    <li>
+                        <label for="userPW">Password (Required)</label>
+                        <input type="password" id="userPW" placeholder="Enter Your PassWord" required>
+                        <span class="material-icons-outlined toggleVisible">visibility_off</span>
+                    </li>
+                </ul>
+                <input type="submit" value="LOG IN">
+            </form>
+            <a href="forgotPassword.html">Forgot your password?</a>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <h2>CREATE NEW ACCOUNT</h2>
+                    <p>
+                        Register online now to personalize your account,
+                        <span>receive updates or catalogues, manage your
+                            orders and wish lists.</span>
+                    </p>
+                </div>
+                <a href="signUp.html">REGISTER</a>
+            </div>
+        </div>
+    </div>
+    <div class="popup favorite_border">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>WISHLIST</h2>
+            <span class="remainItem">3 ITEMS SAVED</span>
+            <ul>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_048.png" alt="product image">
+                    <div>
+                        <b>BIG PILOT'S WATCH AMG G 63</b>
+                        <small>18 ct Armor Gold® case, Automatic, 46.2 mm</small>
+                        <mark>$ 8,500</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_042.png" alt="product image">
+                    <div>
+                        <b>PILOT'S WATCH MARK XX</b>
+                        <small>Stainless steel case, Automatic, 40.0 mm</small>
+                        <mark>$ 6,150</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_067.png" alt="product image">
+                    <div>
+                        <b>PILOT'S WATCH CHRONOGRAPH 41 TOP GUN OCEANA</b>
+                        <small>Ceramic case, Automatic, 41.9 mm</small>
+                        <mark>$ 11,700</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="popup shopping_bag">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>SHOPPING BAG</h2>
+            <p>Free delivery and return : Ships in 3-5 business days</p>
+            <div>
+                <ul>
+                    <li>
+                        <input type="button" value="remove" class="material-icons-outlined">
+                        <img src="images/productThumbnail_048.png" alt="product image">
+                        <span>IW501201</span>
+                        <b>BIG PILOT'S WATCH AMG G 63</b>
+                        <small>18 ct Armor Gold® case, Automatic, 46.2 mm</small>
+                        <mark>$ 8,500</mark>
+                    </li>
+                    <li>
+                        <input type="button" value="remove" class="material-icons-outlined">
+                        <img src="images/productThumbnail_042.png" alt="product image">
+                        <span>IW328206</span>
+                        <b>PILOT'S WATCH MARK XX</b>
+                        <small>Stainless steel case, Automatic, 40.0 mm</small>
+                        <mark>$ 6,150</mark>
+                    </li>
+                </ul>
+                <div>
+                    <span>
+                        SUBTOTAL
+                        <mark>$ 14,650</mark>
+                    </span>
+                    <span>
+                        DELIVERY
+                        <mark>FREE</mark>
+                    </span>
+                    <span>
+                        TAXES
+                        <mark>To be calculated</mark>
+                    </span>
+                    <span>
+                        TOTAL
+                        <mark>$ 14,650</mark>
+                    </span>
+                    <p>Pay your order by Wire Transfer (only available with phone sales service) or the following online
+                        secured payment methods</p>
+                    <ul>
+                        <li><img src="images/paymentmethod__master.png" alt="master"></li>
+                        <li><img src="images/paymentmethod__union.png" alt="union pay"></li>
+                        <li><img src="images/paymentmethod__visa.png" alt="visa"></li>
+                        <li><img src="images/paymentmethod__amex.png" alt="american express"></li>
+                        <li><img src="images/paymentmethod__apple.png" alt="apple pay"></li>
+                        <li><img src="images/paymentmethod__wecp.png" alt="we chat pay"></li>
+                        <li><img src="images/paymentmethod__ppal.png" alt="paypal"></li>
+                        <li><img src="images/paymentmethod__gpay.png" alt="google pay"></li>
+                        <li><img src="images/paymentmethod__alix.png" alt="ali express pay"></li>
+                    </ul>
+                    <a href="checkout.html">CHECKOUT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup menu">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2><a href="/"><img src="images/logo.svg" alt="logo"></a></h2>
+        </div>
+        <ul>
+            <li><a href="watches.html">WATHCES</a></li>
+            <li><a href="sv_types.html">SERVICES</a></li>
+            <li><a href="findStore.html">STORES</a></li>
+            <li><a href="experience.html">EXPERIENCE</a></li>
+            <li><a href="journal.html">JOURNAL</a></li>
+        </ul>
+        <ol>
+            <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+            <li><a href="sv_extendWarranty.html">Extend Your Warranty</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ol>
+        <div>
+            <span>United States | English</span>
+            <a href="tel:+18004329330">1-800-432-9330</a>
+        </div>
+    </div>
+    <!-- popup -->
+
+    <header class="blackTheme">
+        <div>
+            <div>
+                <span>1-800-432-9330</span>
+                <span>United States | English</span>
+            </div>
+            <ul>
+                <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+                <li><a href="sv_extendWarranty.html">Extend Your Warranty</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <input type="button" value="menu" class="material-icons-outlined mui">
+            <h1><a href="/"><img src="images/logo_wh.svg" alt="iwc"></a></h1>
+            <nav>
+                <input type="button" value="close" class="material-icons-outlined">
+                <ul>
+                    <li><a href="watches.html">WATCHES</a></li>
+                    <li><a href="sv_careAdvice.html">SERVICES</a></li>
+                    <li><a href="findStore.html">STORES</a></li>
+                    <li><a href="experience.html">EXPERIENCE</a></li>
+                    <li><a href="journal.html">JOURNAL</a></li>
+                </ul>
+            </nav>
+            <ul>
+                <li>
+                    <input type="button" value="search" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="perm_identity" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="favorite_border" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="shopping_bag" class="material-icons-outlined utility">
+                </li>
+            </ul>
+        </div>
+        <div class="mui">
+            <div>
+                <input type="button" value="menu" class="material-icons-outlined">
+                <h1><a href="/"><img src="images/logo_wh.svg" alt="iwc"></a></h1>
+                <ul>
+                    <li>
+                        <input type="button" value="search" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="perm_identity" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="favorite_border" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="shopping_bag" class="material-icons-outlined utility">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="articleContainer atc07">
+        <img src="images/article_07_header.png" alt="article_07">
+        <div>
+            <small>LIFESTYLE</small>
+            <h2>RUNNING WITH TIME: FROM THE RHINE FALLS TO POPPY FIELDS</h2>
+            <span>Read Time: 3 min</span>
+            <p>Join landscape photographer Joni Hedinger on his run through IWC’s hometown, SCHAFFHAUSEN.</p>
+            <ul>
+                <li>
+                    <img src="images/article_07_01.png" alt="article image">
+                </li>
+                <li>
+                    <h3>READY, SET, GO!</h3>
+                    <span>6:55 a.m.</span>
+                    <p>Starting at the Rhine Falls, I felt quite small as I took in the breathtaking view of Europe’s largest waterfall. The power of the cascading water set the tone for my run. On my wrist, I wore the IWC Pilot’s Watch Chronograph 41 TOP GUN (Ref. IW389401) with stop function. The first part of my route led me along the Rhine.</p>
+                    <p>Shortly before reaching the old town of Schaffhausen, I passed the IWC headquarters. I couldn’t help but appreciate its architectural significance and the city’s watchmaking heritage. After a quick look at the beautiful building, which also houses the IWC Museum, I continued my run.</p>
+                </li>
+                <li>
+                    <img src="images/article_07_02.png" alt="article image">
+                </li>
+                <li>
+                    <h3>WELCOME PAUSE</h3>
+                    <span>7:35 a.m.</span>
+                    <p>Taking a moment for a coffee break was a welcome pause during my run. I found a cozy café where I enjoyed an espresso which provided me with new energy.</p>
+                    <p>The old town of Schaffhausen is clearly worth a visit. I passed many historic buildings. Of course, it also offers many different stores and restaurants which I did not have time to visit during my run.</p>
+                    <p>After the break, I resumed the stop function on my Pilot’s Watch Chronograph 41 TOP GUN and continued on.</p>
+                </li>
+                <li>
+                    <img src="images/article_07_03.png" alt="article image">
+                </li>
+                <li>
+                    <h3>ENJOY THE VIEW!</h3>
+                    <span>8:07 a.m.</span>
+                    <p>I made my way to the Munot, a historic fortress that offered panoramic views of the city. After running up the 200-meter long staircase and reaching the summit, I stepped inside the Munot and was immediately captivated by its historic charm. The fortress exuded a sense of timelessness, and I was transported back in time, imagining the stories and events that had taken place within its walls.</p>
+                    <p>On the top of Munot, looking out over the city of Schaffhausen, I saw a patchwork of rooftops and the sparkling waters of the Rhine river. It was a sight that made every effort worthwhile. I took a moment to catch my breath and enjoy the view that stretched out before me. The Munot was a true highlight of the city run, offering not only physical exertion but also a glimpse into the historical heritage of Schaffhausen.</p>
+                </li>
+                <li>
+                    <img src="images/article_07_04.png" alt="article image">
+                </li>
+                <li>
+                    <h3>TIME TO SLOW DOWN AND BREATHE</h3>
+                    <span>9:00 a.m.</span>
+                    <p>The final part of my run through Schaffhausen took me to the calm rural region surrounding the city. As I ventured away from the bustling streets and into the peaceful countryside, a whole new world unfolded before me. The countryside of Schaffhausen was a scenic escape from the urban environment.</p>
+                    <p>One particular highlight was a poppy field. As I arrived at this serene location, I was struck by its charm. It was a reminder to slow down, to breathe, and to find joy in the simplicity of the natural world. That was the end of my run. I would say a perfect finish.</p>
+                </li>
+                <li>
+                    <img src="images/article_07_05.png" alt="article image">
+                </li>
+                <li>
+                    <h3>WINDING DOWN</h3>
+                    <p>In conclusion, my city run through Schaffhausen was a really great adventure, filled with breathtaking sights and memorable stops. From the power of the Rhine Falls to the historic Munot, and the beauty of the poppy field in the rural region, each location had its own charm. I hope my experiences inspired you to visit this beautiful town.</p>
+                    <p>It offers a lot of possibilities that cater to all interests and preferences. Whether you’re an outdoor enthusiast or a history lover, Schaffhausen has something special to offer for everyone. Or maybe you can discover Schaffhausen with your running shoes, like I did. Have fun!</p>
+                </li>
+            </ul>
+            <a href="journal.html" class="btn-square">RETURN TO JOURNAL</a>
+        </div>
+    </div>
+
+    <a href="#" class="btnTop">
+        <span class="material-icons-outlined">
+            arrow_upward
+        </span>
+    </a>
+    <footer>
+        <div>
+            <div>
+                <h2 class="unfold">CUSTOMER CARE</h2>
+                <ul>
+                    <li><a href="conditionOfSale.html">Condition of Sale</a></li>
+                    <li><a href="warranty_international.html">Warranty</a></li>
+                    <li><a href="registerTimepiece.html">Register Timepiece</a></li>
+                    <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+                    <li><a href="faq_service.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="unfold">PRIVACY&TERMS</h2>
+                <ul>
+                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                    <li><a href="termsOfUse.html">Terms of Use</a></li>
+                    <li><a href="accessibility.html">Accessibility</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="unfold">MADE AT IWC</h2>
+                <ul>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="sustainability.html">Sustainability</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+                <div>
+                    <input type="email" placeholder="Email Address (Required)">
+                    <input type="button" value="east" class="material-icons-outlined">
+                </div>
+                <a href="contactUs.html" class="btn-square">CONTACT TO US</a>
+            </div>
+        </div>
+        <div>
+            <p>© International Watch Company. 2024</p>
+            <ul>
+                <li><a href="https://www.facebook.com/IWCWatches">facebook</a></li>
+                <li><a href="http://www.instagram.com/iwcwatches">instagram</a></li>
+                <li><a href="http://www.x.com/iwc">x</a></li>
+                <li><a href="http://www.youtube.com/iwcwatches">youtube</a></li>
+                <li><a href="https://www.pinterest.com/iwcwatches/">pinterest</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

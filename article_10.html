@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iwc</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/iwc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+
+<body>
+    <div class="popup search">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>TYPE IN THE KEY WORDS</h2>
+            <div>
+                <input type="search" placeholder="Please Enter Your Search Term">
+                <input type="submit" value="SEARCH">
+                <ul>
+                    <li><b>MOST COMMONLY SEARCHED</b></li>
+                    <li>CHRONOGRAPH</li>
+                    <li>TOP GUN</li>
+                    <li>AUTOMATIC</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="popup perm_identity">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>SIGN INTO IWC</h2>
+            <p>Please sign in here by entering your email address and your password</p>
+            <form action="index_after.html">
+                <ul>
+                    <li>
+                        <label for="userEmail">Email (Required)</label>
+                        <input type="email" id="userEmail" placeholder="Enter Your Email" required>
+                        <p>
+                            <span class="material-icons-outlined">info </span>
+                            Email Validation
+                        </p>
+                    </li>
+                    <li>
+                        <label for="userPW">Password (Required)</label>
+                        <input type="password" id="userPW" placeholder="Enter Your PassWord" required>
+                        <span class="material-icons-outlined toggleVisible">visibility_off</span>
+                    </li>
+                </ul>
+                <input type="submit" value="LOG IN">
+            </form>
+            <a href="forgotPassword.html">Forgot your password?</a>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <h2>CREATE NEW ACCOUNT</h2>
+                    <p>
+                        Register online now to personalize your account,
+                        <span>receive updates or catalogues, manage your
+                            orders and wish lists.</span>
+                    </p>
+                </div>
+                <a href="signUp.html">REGISTER</a>
+            </div>
+        </div>
+    </div>
+    <div class="popup favorite_border">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>WISHLIST</h2>
+            <span class="remainItem">3 ITEMS SAVED</span>
+            <ul>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_048.png" alt="product image">
+                    <div>
+                        <b>BIG PILOT'S WATCH AMG G 63</b>
+                        <small>18 ct Armor Gold® case, Automatic, 46.2 mm</small>
+                        <mark>$ 8,500</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_042.png" alt="product image">
+                    <div>
+                        <b>PILOT'S WATCH MARK XX</b>
+                        <small>Stainless steel case, Automatic, 40.0 mm</small>
+                        <mark>$ 6,150</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_067.png" alt="product image">
+                    <div>
+                        <b>PILOT'S WATCH CHRONOGRAPH 41 TOP GUN OCEANA</b>
+                        <small>Ceramic case, Automatic, 41.9 mm</small>
+                        <mark>$ 11,700</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="popup shopping_bag">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>SHOPPING BAG</h2>
+            <p>Free delivery and return : Ships in 3-5 business days</p>
+            <div>
+                <ul>
+                    <li>
+                        <input type="button" value="remove" class="material-icons-outlined">
+                        <img src="images/productThumbnail_048.png" alt="product image">
+                        <span>IW501201</span>
+                        <b>BIG PILOT'S WATCH AMG G 63</b>
+                        <small>18 ct Armor Gold® case, Automatic, 46.2 mm</small>
+                        <mark>$ 8,500</mark>
+                    </li>
+                    <li>
+                        <input type="button" value="remove" class="material-icons-outlined">
+                        <img src="images/productThumbnail_042.png" alt="product image">
+                        <span>IW328206</span>
+                        <b>PILOT'S WATCH MARK XX</b>
+                        <small>Stainless steel case, Automatic, 40.0 mm</small>
+                        <mark>$ 6,150</mark>
+                    </li>
+                </ul>
+                <div>
+                    <span>
+                        SUBTOTAL
+                        <mark>$ 14,650</mark>
+                    </span>
+                    <span>
+                        DELIVERY
+                        <mark>FREE</mark>
+                    </span>
+                    <span>
+                        TAXES
+                        <mark>To be calculated</mark>
+                    </span>
+                    <span>
+                        TOTAL
+                        <mark>$ 14,650</mark>
+                    </span>
+                    <p>Pay your order by Wire Transfer (only available with phone sales service) or the following online
+                        secured payment methods</p>
+                    <ul>
+                        <li><img src="images/paymentmethod__master.png" alt="master"></li>
+                        <li><img src="images/paymentmethod__union.png" alt="union pay"></li>
+                        <li><img src="images/paymentmethod__visa.png" alt="visa"></li>
+                        <li><img src="images/paymentmethod__amex.png" alt="american express"></li>
+                        <li><img src="images/paymentmethod__apple.png" alt="apple pay"></li>
+                        <li><img src="images/paymentmethod__wecp.png" alt="we chat pay"></li>
+                        <li><img src="images/paymentmethod__ppal.png" alt="paypal"></li>
+                        <li><img src="images/paymentmethod__gpay.png" alt="google pay"></li>
+                        <li><img src="images/paymentmethod__alix.png" alt="ali express pay"></li>
+                    </ul>
+                    <a href="checkout.html">CHECKOUT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup menu">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2><a href="/"><img src="images/logo.svg" alt="logo"></a></h2>
+        </div>
+        <ul>
+            <li><a href="watches.html">WATHCES</a></li>
+            <li><a href="sv_types.html">SERVICES</a></li>
+            <li><a href="findStore.html">STORES</a></li>
+            <li><a href="experience.html">EXPERIENCE</a></li>
+            <li><a href="journal.html">JOURNAL</a></li>
+        </ul>
+        <ol>
+            <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+            <li><a href="sv_extendWarranty.html">Extend Your Warranty</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ol>
+        <div>
+            <span>United States | English</span>
+            <a href="tel:+18004329330">1-800-432-9330</a>
+        </div>
+    </div>
+    <!-- popup -->
+
+    <header class="blackTheme">
+        <div>
+            <div>
+                <span>1-800-432-9330</span>
+                <span>United States | English</span>
+            </div>
+            <ul>
+                <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+                <li><a href="sv_extendWarranty.html">Extend Your Warranty</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <input type="button" value="menu" class="material-icons-outlined mui">
+            <h1><a href="/"><img src="images/logo_wh.svg" alt="iwc"></a></h1>
+            <nav>
+                <input type="button" value="close" class="material-icons-outlined">
+                <ul>
+                    <li><a href="watches.html">WATCHES</a></li>
+                    <li><a href="sv_careAdvice.html">SERVICES</a></li>
+                    <li><a href="findStore.html">STORES</a></li>
+                    <li><a href="experience.html">EXPERIENCE</a></li>
+                    <li><a href="journal.html">JOURNAL</a></li>
+                </ul>
+            </nav>
+            <ul>
+                <li>
+                    <input type="button" value="search" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="perm_identity" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="favorite_border" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="shopping_bag" class="material-icons-outlined utility">
+                </li>
+            </ul>
+        </div>
+        <div class="mui">
+            <div>
+                <input type="button" value="menu" class="material-icons-outlined">
+                <h1><a href="/"><img src="images/logo_wh.svg" alt="iwc"></a></h1>
+                <ul>
+                    <li>
+                        <input type="button" value="search" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="perm_identity" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="favorite_border" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="shopping_bag" class="material-icons-outlined utility">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="articleContainer atc10">
+        <img src="images/article_10_header.png" alt="article_10">
+        <div>
+            <small>LIFESTYLE</small>
+            <h2>GISELE’S ART OF GIVING TIME</h2>
+            <span>Read Time: 3 min</span>
+            <p>Discover how supermodel and powerhouse mom Gisele Bündchen manages her packed schedule and finds “Me Time”</p>
+            <ul>
+                <li>
+                    <img src="images/article_10_01.png" alt="article image">
+                </li>
+                <li>
+                    <h3>THE IMPORTANCE OF SELF-CARE</h3>
+                    <p>The most important thing for me is to start my day right. I feel the way you start sets the energy for your entire day. If you wake up late with the alarm ringing and running late, you feel like you need to catch up for the rest of the day. So, I’m very mindful of the time I wake up.</p>
+                    <p>Just like you recharge your phone at night, you have to recharge yourself. I’m making sure I have enough sleep. I go to bed at 10 p.m. because I wake up at 5 a.m. I get up before sunrise, and I like to have time to meditate, do some yoga, walk my dog, and prepare breakfast for the kids. I like to do everything in peace, and when everything is calm and quiet. That’s how I fill up my cup, so I am able to give more.</p>
+                </li>
+                <li>
+                    <img src="images/article_10_02.png" alt="article image">
+                </li>
+                <li>
+                    <h3>GISELE’S NEW BOOK: “NOURISH”</h3>
+                    <p>I have five sisters, so I regularly share recipes with my sisters. I wrote the book because I wanted to share my favorite quick, simple, and yummy recipes with more people because food is such an important thing.</p>
+                    <p>If you choose the right, healthy food, you’re going to feel better. But a lot of people feel overwhelmed in the kitchen and don’t know what to cook. So, my whole book is about organizing and managing your time because everybody is busy.</p>
+                    <p>My mom had six kids, so it was all about how she prepped and organized the whole week. If you get organized, you can make sure to get all the produce and nothing goes to waste. My whole book is about nutritious and delicious but simple quick recipes that everyone can make. I am not a chef, but I like to know what I put in my body.</p>
+                </li>
+            </ul>
+            <a href="journal.html" class="btn-square">RETURN TO JOURNAL</a>
+        </div>
+    </div>
+
+    <a href="#" class="btnTop">
+        <span class="material-icons-outlined">
+            arrow_upward
+        </span>
+    </a>
+    <footer>
+        <div>
+            <div>
+                <h2 class="unfold">CUSTOMER CARE</h2>
+                <ul>
+                    <li><a href="conditionOfSale.html">Condition of Sale</a></li>
+                    <li><a href="warranty_international.html">Warranty</a></li>
+                    <li><a href="registerTimepiece.html">Register Timepiece</a></li>
+                    <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+                    <li><a href="faq_service.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="unfold">PRIVACY&TERMS</h2>
+                <ul>
+                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                    <li><a href="termsOfUse.html">Terms of Use</a></li>
+                    <li><a href="accessibility.html">Accessibility</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="unfold">MADE AT IWC</h2>
+                <ul>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="sustainability.html">Sustainability</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+                <div>
+                    <input type="email" placeholder="Email Address (Required)">
+                    <input type="button" value="east" class="material-icons-outlined">
+                </div>
+                <a href="contactUs.html" class="btn-square">CONTACT TO US</a>
+            </div>
+        </div>
+        <div>
+            <p>© International Watch Company. 2024</p>
+            <ul>
+                <li><a href="https://www.facebook.com/IWCWatches">facebook</a></li>
+                <li><a href="http://www.instagram.com/iwcwatches">instagram</a></li>
+                <li><a href="http://www.x.com/iwc">x</a></li>
+                <li><a href="http://www.youtube.com/iwcwatches">youtube</a></li>
+                <li><a href="https://www.pinterest.com/iwcwatches/">pinterest</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iwc</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/iwc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+
+<body>
+    <div class="popup search">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>TYPE IN THE KEY WORDS</h2>
+            <div>
+                <input type="search" placeholder="Please Enter Your Search Term">
+                <input type="submit" value="SEARCH">
+                <ul>
+                    <li><b>MOST COMMONLY SEARCHED</b></li>
+                    <li>CHRONOGRAPH</li>
+                    <li>TOP GUN</li>
+                    <li>AUTOMATIC</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="popup perm_identity">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>SIGN INTO IWC</h2>
+            <p>Please sign in here by entering your email address and your password</p>
+            <form action="index_after.html">
+                <ul>
+                    <li>
+                        <label for="userEmail">Email (Required)</label>
+                        <input type="email" id="userEmail" placeholder="Enter Your Email" required>
+                        <p>
+                            <span class="material-icons-outlined">info </span>
+                            Email Validation
+                        </p>
+                    </li>
+                    <li>
+                        <label for="userPW">Password (Required)</label>
+                        <input type="password" id="userPW" placeholder="Enter Your PassWord" required>
+                        <span class="material-icons-outlined toggleVisible">visibility_off</span>
+                    </li>
+                </ul>
+                <input type="submit" value="LOG IN">
+            </form>
+            <a href="forgotPassword.html">Forgot your password?</a>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <h2>CREATE NEW ACCOUNT</h2>
+                    <p>
+                        Register online now to personalize your account,
+                        <span>receive updates or catalogues, manage your
+                            orders and wish lists.</span>
+                    </p>
+                </div>
+                <a href="signUp.html">REGISTER</a>
+            </div>
+        </div>
+    </div>
+    <div class="popup favorite_border">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>WISHLIST</h2>
+            <span>3 ITEMS SAVED</span>
+            <ul>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_048.png" alt="product image">
+                    <div>
+                        <b>BIG PILOT'S WATCH AMG G 63</b>
+                        <small>18 ct Armor Gold® case, Automatic, 46.2 mm</small>
+                        <mark>$ 8,500</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_042.png" alt="product image">
+                    <div>
+                        <b>PILOT'S WATCH MARK XX</b>
+                        <small>Stainless steel case, Automatic, 40.0 mm</small>
+                        <mark>$ 6,150</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_067.png" alt="product image">
+                    <div>
+                        <b>PILOT'S WATCH CHRONOGRAPH 41 TOP GUN OCEANA</b>
+                        <small>Ceramic case, Automatic, 41.9 mm</small>
+                        <mark>$ 11,700</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="popup shopping_bag">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>SHOPPING BAG</h2>
+            <p>Free delivery and return : Ships in 3-5 business days</p>
+            <div>
+                <ul>
+                    <li>
+                        <input type="button" value="remove" class="material-icons-outlined">
+                        <img src="images/productThumbnail_048.png" alt="product image">
+                        <span>IW501201</span>
+                        <b>BIG PILOT'S WATCH AMG G 63</b>
+                        <small>18 ct Armor Gold® case, Automatic, 46.2 mm</small>
+                        <mark>$ 8,500</mark>
+                    </li>
+                    <li>
+                        <input type="button" value="remove" class="material-icons-outlined">
+                        <img src="images/productThumbnail_042.png" alt="product image">
+                        <span>IW328206</span>
+                        <b>PILOT'S WATCH MARK XX</b>
+                        <small>Stainless steel case, Automatic, 40.0 mm</small>
+                        <mark>$ 6,150</mark>
+                    </li>
+                </ul>
+                <div>
+                    <span>
+                        SUBTOTAL
+                        <mark>$ 14,650</mark>
+                    </span>
+                    <span>
+                        DELIVERY
+                        <mark>FREE</mark>
+                    </span>
+                    <span>
+                        TAXES
+                        <mark>To be calculated</mark>
+                    </span>
+                    <span>
+                        TOTAL
+                        <mark>$ 14,650</mark>
+                    </span>
+                    <p>Pay your order by Wire Transfer (only available with phone sales service) or the following online
+                        secured payment methods</p>
+                    <ul>
+                        <li><img src="images/paymentmethod__master.png" alt="master"></li>
+                        <li><img src="images/paymentmethod__union.png" alt="union pay"></li>
+                        <li><img src="images/paymentmethod__visa.png" alt="visa"></li>
+                        <li><img src="images/paymentmethod__amex.png" alt="american express"></li>
+                        <li><img src="images/paymentmethod__apple.png" alt="apple pay"></li>
+                        <li><img src="images/paymentmethod__wecp.png" alt="we chat pay"></li>
+                        <li><img src="images/paymentmethod__ppal.png" alt="paypal"></li>
+                        <li><img src="images/paymentmethod__gpay.png" alt="google pay"></li>
+                        <li><img src="images/paymentmethod__alix.png" alt="ali express pay"></li>
+                    </ul>
+                    <a href="checkout.html">CHECKOUT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup menu">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2><a href="/"><img src="images/logo.svg" alt="logo"></a></h2>
+        </div>
+        <ul>
+            <li><a href="watches.html">WATHCES</a></li>
+            <li><a href="sv_types.html">SERVICES</a></li>
+            <li><a href="findStore.html">STORES</a></li>
+            <li><a href="experience.html">EXPERIENCE</a></li>
+            <li><a href="journal.html">JOURNAL</a></li>
+        </ul>
+        <ol>
+            <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+            <li><a href="sv_extendWarranty.html">Extend Your Warranty</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ol>
+        <div>
+            <span>United States | English</span>
+            <a href="tel:+18004329330">1-800-432-9330</a>
+        </div>
+    </div>
+    <!-- popup -->
+
+    <header class="blackTheme">
+        <div>
+            <div>
+                <span>1-800-432-9330</span>
+                <span>United States | English</span>
+            </div>
+            <ul>
+                <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+                <li><a href="sv_extendWarranty.html">Extend Your Warranty</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <input type="button" value="menu" class="material-icons-outlined mui">
+            <h1><a href="/"><img src="images/logo_wh.svg" alt="iwc"></a></h1>
+            <nav>
+                <input type="button" value="close" class="material-icons-outlined">
+                <ul>
+                    <li><a href="watches.html">WATCHES</a></li>
+                    <li><a href="sv_careAdvice.html">SERVICES</a></li>
+                    <li><a href="findStore.html">STORES</a></li>
+                    <li><a href="experience.html">EXPERIENCE</a></li>
+                    <li><a href="journal.html">JOURNAL</a></li>
+                </ul>
+            </nav>
+            <ul>
+                <li>
+                    <input type="button" value="search" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="perm_identity" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="favorite_border" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="shopping_bag" class="material-icons-outlined utility">
+                </li>
+            </ul>
+        </div>
+        <div class="mui">
+            <div>
+                <input type="button" value="menu" class="material-icons-outlined">
+                <h1><a href="/"><img src="images/logo_wh.svg" alt="iwc"></a></h1>
+                <ul>
+                    <li>
+                        <input type="button" value="search" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="perm_identity" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="favorite_border" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="shopping_bag" class="material-icons-outlined utility">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="historyContainer">
+        <div>
+            <small>MADE AT IWC</small>
+            <h2>HISTORY</h2>
+        </div>
+        <ul>
+            <li>
+                <h2>1868 - 1903</h2>
+                <b>THE EARLY YEARS</b>
+            </li>
+            <li>
+                <img src="images/history_thumbsnail_01.png" alt="1868 - 1903">
+                <p>The heritage of IWC is deeply rooted in American pioneering spirit and entrepreneurship. Florentine Ariosto Jones, a watchmaker from Boston, founds the International Watch Company in 1868. He draws on the help of eminently qualified Swiss watchmakers, modern technology, and hydropower sourced from the nearby River Rhine to manufacture pocket watch movements of the highest possible quality. The Rauschenbachs, an industrialist family from Schaffhausen, take over the company following Jones’ return to the United States. During its early years, IWC produces pocket watches with a digital “Pallweber” display, as well as wristwatches for women and men.</p>
+                <b>1868, FLORENTINE ARIOSTO JONES (1841-1916), A WATCHMAKER FROM BOSTON, MASSACHUSETTS, FOUNDS THE INTERNATIONAL WATCH COMPANY IN SCHAFFHAUSEN. HIS AIM: TO PRODUCE HIGH- QUALITY POCKET WATCHES FOR THE AMERICAN MARKET.</b>
+            </li>
+        </ul>
+        <div>
+            <ul>
+                <li>
+                    <h2>1905 - 1940</h2>
+                    <b>THE ERNST JAKOB HOMBERGER ERA</b>
+                </li>
+                <li>
+                    <img src="images/history_thumbsnail_02.png" alt="1905 - 1940">
+                    <p>Following the death of Johannes Rauschenbach-Schenk, Schaffhausen industrialist Ernst Jakob Homberger takes over the company. This era sees the birth of two watch families which are still true icons to this day. The first “Spezialuhr für Flieger” establishes the tradition of producing Pilot’s Watches in Schaffhausen, which, thanks to their unmistakable design, are still popular across the world today. As Portuguese importers order a series of large wristwatches with high-precision pocket watch calibres, the first Portugieser model leaves IWC’s workshops.</p>
+                    <b>1929, ERNST JAKOB HOMBERGER ACQUIRES THE HOLDING OF HIS BROTHER-IN-LAW C.G. JUNG AND BECOMES THE SOLE OWNER OF IWC.</b>
+                </li>
+            </ul>
+        </div>
+        <ul>
+            <li>
+                <h2>1944 - 1950</h2>
+                <b>ALBERT PELLATON JOINS IWC</b>
+            </li>
+            <li>
+                <img src="images/history_thumbsnail_03.png" alt="1944 - 1950">
+                <p>The post-war years are characterized by the increased use of technology in people’s everyday lives. More and more appliances create magnetic fields which can negatively impact the accuracy of mechanical watches. It is during this time that Albert Pellaton becomes Technical Director at IWC Schaffhausen. Among his inventions are the extremely accurate 89 calibre, or the soft-iron inner case, which protects watch movements against magnetic fields. He also develops a particularly efficient bidirectional pawl-winding system, which shoots to fame as the Pellaton winding system.</p>
+                <b>1950, THE 85 CALIBRE, DESIGNED BY ALBERT PELLATON, FEATURES IWC'S FIRST AUTOMATIC WINDING MECHANISM. THE INNOVATIVE PAWL-WINDING SYSTEM REPLACES THE TRADITIONAL RECIPROCAL GEARING AND, AT THIS TIME, IS A PATENTED PROPRIETARY DEVELOPMENT BY IWC.</b>
+            </li>
+        </ul>
+        <div>
+            <ul>
+                <li>
+                    <h2>1955 - 1977</h2>
+                    <b>HANS ERNST HOMBERGER TAKES OVER</b>
+                </li>
+                <li>
+                    <img src="images/history_thumbsnail_04.png" alt="1955 - 1977">
+                    <p>In the same year that Hans Ernst Homberger takes over at IWC, the first Ingenieur is launched. Its simple round design has since returned and become a distinctive feature of this sporty and elegant watch family. A few years later, IWC launches the first Aquatimer, and with it writes the first chapter in a success story of diver’s watches from Schaffhausen that continues to this day. The company also plays a key role in developing the first ever Swiss-made quartz movement “Beta 21”, which premieres in the first Da Vinci with a distinctive hexagonal gold case.</p>
+                    <b>1959, DESIGN OF THE 44 CALIBRE, THE FIRST AUTOMATIC WOMEN'S MOVEMENT FROM IWC.</b>
+                </li>
+            </ul>
+        </div>
+        <ul>
+            <li>
+                <h2>1978 - 1995</h2>
+                <b>THE VDO ADOLF SCHINDLING ERA</b>
+            </li>
+            <li>
+                <img src="images/history_thumbsnail_05.png" alt="1978 - 1995">
+                <p>At the peak of the quartz crisis, IWC deliberately focuses on creating masterpieces of watchmaking art. With the world’s first watch case made from titanium, IWC lays the foundation for its unparalleled expertise in the area of materials. In the mid-1980s, the perpetual calendar from Kurt Klaus makes its debut in the Da Vinci family. Following seven years of development, IWC launches its first Grande Complication, and reaches the pinnacle of haute horlogerie. To mark its 125th anniversary, IWC unveils what is then the world’s most complicated mechanical wristwatch: Il Destriero Scafusia.</p>
+                <b>1982, IWC LAUNCHES THE ULTRA-RUGGED OCEAN 2000 DIVER'S WATCH, MADE OF TITANIUM AND PRESSURE-RESISTANT TO 200 BAR.</b>
+            </li>
+        </ul>
+        <div>
+            <ul>
+                <li>
+                    <h2>2000 - 2021</h2>
+                    <b>THE RICHEMONT ERA</b>
+                </li>
+                <li>
+                    <img src="images/history_thumbsnail_06.png" alt="2000 - 2021">
+                    <p>After IWC becomes a part of Richemont, the company continuously expands its six watch families with precision engineering and exclusive design. In the Portugieser line, a double moon display is added to the perpetual calendar, while this mechanism features a digital display for the date and month for the first time in the Da Vinci family. IWC introduces the external/internal rotating bezel for the Aquatimer and launches its first watch with a bronze case. The Annual Calendar complication shows the month, date and day in the format used in the U.S. – a tribute to the company’s American founder.</p>
+                    <b>2017, FIRST TIME IWC HAS USED THE MATERIAL “CERATANIUM®” AFTER MORE THAN 5 YEARS OF RESEARCH & DEVELOPMENT.</b>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <a href="#" class="btnTop">
+        <span class="material-icons-outlined">
+            arrow_upward
+        </span>
+    </a>
+    <footer>
+        <div>
+            <div>
+                <h2 class="unfold">CUSTOMER CARE</h2>
+                <ul>
+                    <li><a href="conditionOfSale.html">Condition of Sale</a></li>
+                    <li><a href="warranty_international.html">Warranty</a></li>
+                    <li><a href="registerTimepiece.html">Register Timepiece</a></li>
+                    <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+                    <li><a href="faq_service.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="unfold">PRIVACY&TERMS</h2>
+                <ul>
+                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                    <li><a href="termsOfUse.html">Terms of Use</a></li>
+                    <li><a href="accessibility.html">Accessibility</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="unfold">MADE AT IWC</h2>
+                <ul>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="sustainability.html">Sustainability</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+                <div>
+                    <input type="email" placeholder="Email Address (Required)">
+                    <input type="button" value="east" class="material-icons-outlined">
+                </div>
+                <a href="contactUs.html" class="btn-square">CONTACT TO US</a>
+            </div>
+        </div>
+        <div>
+            <p>© International Watch Company. 2024</p>
+            <ul>
+                <li><a href="https://www.facebook.com/IWCWatches">facebook</a></li>
+                <li><a href="http://www.instagram.com/iwcwatches">instagram</a></li>
+                <li><a href="http://www.x.com/iwc">x</a></li>
+                <li><a href="http://www.youtube.com/iwcwatches">youtube</a></li>
+                <li><a href="https://www.pinterest.com/iwcwatches/">pinterest</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

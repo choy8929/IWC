@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iwc</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/iwc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+
+<body>
+    <div class="popup search">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>TYPE IN THE KEY WORDS</h2>
+            <div>
+                <input type="search" placeholder="Please Enter Your Search Term">
+                <input type="submit" value="SEARCH">
+                <ul>
+                    <li><b>MOST COMMONLY SEARCHED</b></li>
+                    <li>CHRONOGRAPH</li>
+                    <li>TOP GUN</li>
+                    <li>AUTOMATIC</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="popup perm_identity">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>SIGN INTO IWC</h2>
+            <p>Please sign in here by entering your email address and your password</p>
+            <form action="index_after.html">
+                <ul>
+                    <li>
+                        <label for="userEmail">Email (Required)</label>
+                        <input type="email" id="userEmail" placeholder="Enter Your Email" required>
+                        <p>
+                            <span class="material-icons-outlined">info </span>
+                            Email Validation
+                        </p>
+                    </li>
+                    <li>
+                        <label for="userPW">Password (Required)</label>
+                        <input type="password" id="userPW" placeholder="Enter Your PassWord" required>
+                        <span class="material-icons-outlined toggleVisible">visibility_off</span>
+                    </li>
+                </ul>
+                <input type="submit" value="LOG IN">
+            </form>
+            <a href="forgotPassword.html">Forgot your password?</a>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <h2>CREATE NEW ACCOUNT</h2>
+                    <p>
+                        Register online now to personalize your account,
+                        <span>receive updates or catalogues, manage your
+                            orders and wish lists.</span>
+                    </p>
+                </div>
+                <a href="signUp.html">REGISTER</a>
+            </div>
+        </div>
+    </div>
+    <div class="popup favorite_border">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>WISHLIST</h2>
+            <span>3 ITEMS SAVED</span>
+            <ul>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_048.png" alt="product image">
+                    <div>
+                        <b>BIG PILOT'S WATCH AMG G 63</b>
+                        <small>18 ct Armor Gold® case, Automatic, 46.2 mm</small>
+                        <mark>$ 8,500</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_042.png" alt="product image">
+                    <div>
+                        <b>PILOT'S WATCH MARK XX</b>
+                        <small>Stainless steel case, Automatic, 40.0 mm</small>
+                        <mark>$ 6,150</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_067.png" alt="product image">
+                    <div>
+                        <b>PILOT'S WATCH CHRONOGRAPH 41 TOP GUN OCEANA</b>
+                        <small>Ceramic case, Automatic, 41.9 mm</small>
+                        <mark>$ 11,700</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="popup shopping_bag">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>SHOPPING BAG</h2>
+            <p>Free delivery and return : Ships in 3-5 business days</p>
+            <div>
+                <ul>
+                    <li>
+                        <input type="button" value="remove" class="material-icons-outlined">
+                        <img src="images/productThumbnail_048.png" alt="product image">
+                        <span>IW501201</span>
+                        <b>BIG PILOT'S WATCH AMG G 63</b>
+                        <small>18 ct Armor Gold® case, Automatic, 46.2 mm</small>
+                        <mark>$ 8,500</mark>
+                    </li>
+                    <li>
+                        <input type="button" value="remove" class="material-icons-outlined">
+                        <img src="images/productThumbnail_042.png" alt="product image">
+                        <span>IW328206</span>
+                        <b>PILOT'S WATCH MARK XX</b>
+                        <small>Stainless steel case, Automatic, 40.0 mm</small>
+                        <mark>$ 6,150</mark>
+                    </li>
+                </ul>
+                <div>
+                    <span>
+                        SUBTOTAL
+                        <mark>$ 14,650</mark>
+                    </span>
+                    <span>
+                        DELIVERY
+                        <mark>FREE</mark>
+                    </span>
+                    <span>
+                        TAXES
+                        <mark>To be calculated</mark>
+                    </span>
+                    <span>
+                        TOTAL
+                        <mark>$ 14,650</mark>
+                    </span>
+                    <p>Pay your order by Wire Transfer (only available with phone sales service) or the following online
+                        secured payment methods</p>
+                    <ul>
+                        <li><img src="images/paymentmethod__master.png" alt="master"></li>
+                        <li><img src="images/paymentmethod__union.png" alt="union pay"></li>
+                        <li><img src="images/paymentmethod__visa.png" alt="visa"></li>
+                        <li><img src="images/paymentmethod__amex.png" alt="american express"></li>
+                        <li><img src="images/paymentmethod__apple.png" alt="apple pay"></li>
+                        <li><img src="images/paymentmethod__wecp.png" alt="we chat pay"></li>
+                        <li><img src="images/paymentmethod__ppal.png" alt="paypal"></li>
+                        <li><img src="images/paymentmethod__gpay.png" alt="google pay"></li>
+                        <li><img src="images/paymentmethod__alix.png" alt="ali express pay"></li>
+                    </ul>
+                    <a href="checkout.html">CHECKOUT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup menu">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2><a href="/"><img src="images/logo.svg" alt="logo"></a></h2>
+        </div>
+        <ul>
+            <li><a href="watches.html">WATHCES</a></li>
+            <li><a href="sv_types.html">SERVICES</a></li>
+            <li><a href="findStore.html">STORES</a></li>
+            <li><a href="experience.html">EXPERIENCE</a></li>
+            <li><a href="journal.html">JOURNAL</a></li>
+        </ul>
+        <ol>
+            <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+            <li><a href="sv_extendWarranty.html">Extend Your Warranty</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ol>
+        <div>
+            <span>United States | English</span>
+            <a href="tel:+18004329330">1-800-432-9330</a>
+        </div>
+    </div>
+    <!-- popup -->
+
+    <header class="blackTheme">
+        <div>
+            <div>
+                <span>1-800-432-9330</span>
+                <span>United States | English</span>
+            </div>
+            <ul>
+                <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+                <li><a href="sv_extendWarranty.html">Extend Your Warranty</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <input type="button" value="menu" class="material-icons-outlined mui">
+            <h1><a href="/"><img src="images/logo_wh.svg" alt="iwc"></a></h1>
+            <nav>
+                <input type="button" value="close" class="material-icons-outlined">
+                <ul>
+                    <li><a href="watches.html">WATCHES</a></li>
+                    <li><a href="sv_careAdvice.html">SERVICES</a></li>
+                    <li><a href="findStore.html">STORES</a></li>
+                    <li><a href="experience.html">EXPERIENCE</a></li>
+                    <li><a href="journal.html">JOURNAL</a></li>
+                </ul>
+            </nav>
+            <ul>
+                <li>
+                    <input type="button" value="search" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="perm_identity" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="favorite_border" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="shopping_bag" class="material-icons-outlined utility">
+                </li>
+            </ul>
+        </div>
+        <div class="mui">
+            <div>
+                <input type="button" value="menu" class="material-icons-outlined">
+                <h1><a href="/"><img src="images/logo_wh.svg" alt="iwc"></a></h1>
+                <ul>
+                    <li>
+                        <input type="button" value="search" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="perm_identity" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="favorite_border" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="shopping_bag" class="material-icons-outlined utility">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="conditionOfSaleContainer">
+        <div>
+            <small>CUSTOMER CARE</small>
+            <h2>CONDITION OF SALE</h2>
+            <p>LAST UPDATED: MARCH 2023</p>
+        </div>
+        <div>
+            <ol>
+                <li class="active">
+                    <h3>1. ABOUT IWC SCHAFFHAUSEN AND THESE CONDITIONS OF SALE<span>expand</span></h3>
+                    <div>
+                        <p>These Conditions of Sale apply to any sales of products or services that you may order from IWC Schaffhausen, a division of Richemont North America, Inc. (“Maison”, "we", "us", and "our"), using:</p>
+                        <p>1. the website iwc.com and any associated mobile or digital applications that refer to these Conditions of Sale (the “Platforms”),<br>2. by e-mail or telephone via a boutique or our client relations center (the “Client Relations Center”), or<br>3. Pay-by-Link at an event outside of the relevant Maison boutique or in the relevant Maison retail boutique (the “Remote Boutique”)<br>(the Platforms, Client Relations Center, and Remote Boutique are together referred to as the “Sales Channels”).</p>
+                        <p>IWC Schaffhausen, a division of Richemont North America, Inc., has its registered offices at 645 Fifth Avenue, New York, New York 10022 and is an affiliate of IWC Schaffhausen, which owns and edits the Platforms pursuant to the Terms of Use.  If placing an order by the Platforms, you agree to be bound by the Terms of Use, which are incorporated into these Conditions of Sale. In addition, our information collection practices and the ways in which we may use and protect that information, are further set out in our Privacy Policy. By using the Sales Channels and placing orders with Maison, you agree to be bound by our Privacy Policy, which is incorporated into these Conditions of Sale by reference.</p>
+                        <p><b>Please read these Conditions of Sale carefully. These Conditions of Sale are applicable to any order placed through the Sales Channels, <span>and include an agreement to arbitrate any disputes on an individual basis</span>. Please note that before placing an order for products or services, you will be asked to agree to these Conditions of Sale. If you do not agree to these Conditions of Sale, then you will not be able to order any products or services through the Sales Channels. Sales concluded in person through physical points of sale (such as our retail boutiques) not using Pay-by-Link or third parties (such as authorized retailers) are not subject to these Conditions of Sale.  </b></p>
+                    </div>
+                </li>
+                <li>
+                    <h3>2. UPDATES TO THESE CONDITIONS OF SALE<span>expand</span></h3>
+                    <div>
+                        <p>We may make changes from time to time to these Conditions of Sale so please check back regularly to keep informed of updates. The latest version of these Conditions of Sale will always be available on the Platforms or on request. Any new version of these Conditions of Sale shall take effect immediately upon the date of posting and will govern any orders of products or services made as of that date. Any changes to the Conditions of Sale made after you have placed an order will not affect that order and your relationship with us, except as may be required by applicable law.</p>
+                    </div>
+                </li>
+                <li>
+                    <h3>3. PURCHASING ELIGIBILITY<span>expand</span></h3>
+                    <div>
+                        <p>Only individuals (and not legal entities) who (a) have reached the age of legal majority required to enter into contracts (eighteen in most states); (b) have legal capacity to enter into contracts; and (c) where shipping is applicable, have a shipping address in the continental United States of America, Alaska, Hawaii or the District of Columbia, may order products through the Sales Channels. If you are under the age of legal majority or otherwise cannot lawfully enter into a contract, you must have your parent or guardian place an order on your behalf and they will be asked to agree to these Conditions of Sale.</p>
+                        <p>By placing an order through the Sales Channels, you represent and warrant that you are a bona fide end-user customer purchasing for your own or another’s personal use and will not deliver, sell or otherwise distribute our products or purchase our products or services for commercial purposes.  Bulk purchases and purchases for resale are prohibited.</p>
+                    </div>
+                </li>
+                <li>
+                    <h3>4. PRODUCT AVAILABILITY & QUANTITY<span>expand</span></h3>
+                    <div>
+                        <div>All orders placed through the Sales Channels are subject to product availability and acceptance of such orders by us. Your purchase is not complete until you receive confirmation from us by email or otherwise.  Additionally, certain products shown may not be available for sale and delivery in some states. The Client Relations Center or Remote Boutique can provide more information as regards these products or the availability of other products. For information about the order process, please refer to our Order Process section below.</div>
+                        <p>Quantity limits may apply in relation to orders for certain products. We reserve the right to refuse at any time and without prior notice, orders exceeding a certain number of products. </p>
+                    </div>
+                </li>
+                <li>
+                    <h3>5. PERSONALIZED SERVICES<span>expand</span></h3>
+                    <div>
+                        <p>Personalization (for example engraving or embossing) or other services may be available on a selection of products. If you wish to have your product personalized, please provide the details in the Sales Channels as requested.</p>
+                        <p>We reserve the right to withhold or refuse acceptance of any order for personalized products, or with a message card, that contains language that is objectionable, unlawful or contrary to our policies. You are responsible for ensuring that any wording you provide for personalizing products is correct.</p>
+                        <p>In addition, orders for personalized products cannot be cancelled and such products that have been personalized in any way or otherwise made to your bespoke specifications cannot be returned to us for exchange or refund (except where defective), and are considered final upon receipt of a written Acknowledgement of Order, as described in these Conditions of Sale. This does not affect your consumer rights (please see the Manufacturer’s guarantee and your legal consumer rights section for further information).</p>
+                    </div>
+                </li>
+                <li>
+                    <h3>6. ORDER PROCESS<span>expand</span></h3>
+                    <div>
+                        <p>For orders placed through the Client Relations Center or the Remote Boutique, the Maison associate will assist you in placing your order and will verbally ask you to confirm the details of your order.</p>
+                        <p>For orders placed through the Platforms, desired products should be placed in the shopping bag (subject to availability and quantity limits) and you should proceed to “checkout” when ready to purchase. During the checkout process, you should review your shopping bag to confirm all details prior to completing your purchase.  Except for personalized products (as further detailed above), product is not guaranteed as available for purchase until the order is placed and you receive a written Confirmation of Order & Shipment.</p>
+                        <p>We reserve the right, in our sole discretion, to refuse, cancel and terminate orders at any time on reasonable grounds. For example, we may refuse, terminate or cancel your order if there is an ongoing dispute concerning payment of a prior order or if we suspect, in our sole discretion, that you have engaged in (i) fraudulent activities; (ii) the import of product activities which we have not intended; or (iii) have otherwise violated these Conditions of Sale.</p>
+                    </div>
+                </li>
+                <li>
+                    <h3>7. PRICES, TAXES AND SHIPPING COSTS<span>expand</span></h3>
+                    <div>
+                        <p>All prices shown or quoted by the applicable Sales Channels are in U.S. Dollars unless otherwise stated and exclude sales tax, shipping costs and other taxes unless otherwise stated. Sales, use or other taxes will vary based on the location to which products are being delivered. You should check updated prices and currency carefully.</p>
+                        <p>Shipping and handling costs, if any, are described in the Shipping Policy below or by the applicable Sales Channels. Shipping and handling costs will only be added to the product price after you have chosen your delivery options, and will be summarised before you are asked to confirm and place your order.</p>
+                        <p>We take reasonable care that the prices of products and delivery costs are correct when the relevant information is communicated to you via the Sales Channels. However, it is possible that, despite our reasonable efforts, some of the products offered or shipping and handling costs may be incorrectly priced and/or applicable laws have changed that may impact taxes associated with your order. If any of the products or any delivery costs are incorrectly priced and/or a different tax applies, we will contact you as soon as possible to reconfirm the order and new amounts. If we are unable to contact you using the contact details you have provided during the order process, we will cancel the order and notify you in writing. If we mistakenly accept and process your order where a pricing or delivery cost error occurs, we may cancel the order and refund you any sums you have paid.</p>
+                    </div>
+                </li>
+                <li>
+                    <h3>8. PAYMENT<span>expand</span></h3>
+                    <div>
+                        <p>We accept the payment methods identified in the order process via the Sales Channels. When ordering, you will need to provide your payment details through the appropriate Sales Channels. Depending on the means of payment, we may require additional information, including specific forms of identification.  All payment card holders are subject to validation check and authorization by the card issuer. If your payment card issuer refuses to authorize payment to us, you will need to contact your card issuer directly to solve this problem.</p>
+                        <p>Other payment methods may also be subject to validation checks and authorization by the payment system providers. You expressly authorize us to perform security checks, where we deem necessary, to transmit or to obtain information (including any updated information) about you to or from third parties, including but not limited to your payment card details, to authenticate your identity, validate your payment card, obtain an initial payment card authorization, and authorize individual purchase transactions.</p>
+                        <p>Depending on your payment method, type, and nature of your purchase, your account may be immediately debited during the checkout process or a hold may be placed on your account for a period of time or until the product is shipped.  Please contact the Sales Channels or your payment card provider for more details. </p>
+                        <p>Where we offer a financing option and you choose to use it to pay for your order, the payment and finance option will be subject to both these Conditions of Sale and the applicable terms and conditions of our finance provider, who is disclosed before or during the checkout process.  You will have the opportunity to acknowledge and agree to the finance provider’s terms and conditions before confirming the finance option as your method of payment.  Note that any selected product(s) and/or service(s) will be held for a limited period of time to permit you to complete the financing process and will be released if you fail to complete the purchase within the time limits. </p>
+                        <p>Where we offer you the ability to prepay for your products, either in full or as a partial prepayment, the prepayment will be taken immediately following the placement of your order and subject to the specific requirements communicated by the applicable Sales Channels during the prepayment process. Prepayments (in whole or in part) are non-refundable; however, prepayments shall not impact your legal rights under these Conditions of Sale. </p>
+                        <p>When using the Sales Channels, we only accept bank wire transfer for orders placed by telephone through the Client Relations Center, and such orders are subject to an order approval process. We do not charge a fee for bank wire transfers; however, some financial institutions may charge a fee for using a bank wire transfer. Your order will not be processed until the payment has been received and confirmed by us, and will be cancelled if the wire transfer payment is not credited into our bank account within seven (7) days after the order is placed.</p>
+                        <p>Maison is prohibited under U.S. law from making sales of its goods to individuals or companies designated on the Office of Foreign Assets Controls (“OFAC”) Specially Designated Nationals (“SDN”) List, or to country destinations sanctioned by the U.S.  Any such transactions will be declined.</p>
+                    </div>
+                </li>
+                <li>
+                    <h3>9. ACKNOWLEDGEMENT OF ORDER<span>expand</span></h3>
+                    <div>
+                        <p>Once your order has been placed through the Sales Channels, you will receive a written Acknowledgement of Order (by e-mail or otherwise confirming the details of your order together with an order reference number). Please make sure that you save this order reference number for any future enquiries regarding your order. Except for personalized products as outlined above, this Acknowledgement of Order is not an acceptance of your order. To confirm the order, we will conduct our usual credit, anti-fraud, security and related legal checks and, if acceptable, will then process your order. Upon receipt of the Acknowledgement of Order, it is your responsibility to review it and confirm that it accurately reflects your intended order.  If you have any questions or concerns or if the Acknowledgement of Order does not reflect your intentions, you should contact the Client Relations Center or Remote Boutique promptly.  </p>
+                    </div>
+                </li>
+                <li>
+                    <h3>10. CONFIRMATION OF ORDER & SHIPMENT<span>expand</span></h3>
+                    <div>
+                        <p>Upon shipment of your order, we will send you a Confirmation of Order & Shipment in writing (by e-mail or otherwise). This Confirmation of Order & Shipment constitutes our acceptance of your order and indicates the existence of a binding sales contract, except for personalized products, where our Acknowledgement of Order constitutes our acceptance of your order and indicates the existence of a binding sales contract. No agreement for purchase is complete until we send you a Confirmation of Order & Shipment. </p>
+                    </div>
+                </li>
+                <li>
+                    <h3>11. SHIPPING POLICY<span>expand</span></h3>
+                    <div>
+                        <p>We only accept orders for shipping within the continental United States of America, Alaska, or Hawaii.  Please note that we do not ship to certain addresses, such as military, certain restricted areas (such as hotels), pick-up points, or PO boxes. On occasion, orders made in person via the Remote Boutique may be shipped internationally, subject to further review and confirmation and in the Remote Boutique’s sole discretion. For further information, please refer to our FAQs section or contact the Client Relations Center.</p>
+                        <p>Boutique pick-up may be offered, free of charge, to certain locations. Please refer to the FAQ section, or the appropriate Sales Channels for more information. We will inform you by e-mail or by telephone when the product is ready for pick-up at the boutique.</p>
+                        <p>If you order several products, we reserve the right to ship the order only once all products are available (there will be no partial shipments unless otherwise communicated to you).</p>
+                    </div>
+                </li>
+                <li>
+                    <h3>12. DELIVERY<span>expand</span></h3>
+                    <div>
+                        <p>We will use reasonable efforts to ensure delivery by the carrier within the estimated delivery time from the date of our written Confirmation of Order & Shipment except if your purchase relates to a product or service that we have explained to you will take additional time to deliver, for example in the case of products or services that we personalize or produce to your specifications.</p>
+                        <p>In certain instances, you may be able to choose a specific delivery date if available on the Sales Channels. If this option is provided to you, any such delivery date remains subject to our confirmation.</p>
+                        <p>If delivery of products is delayed, we will inform you as soon as possible and will use reasonable efforts to minimize the delay. With the exception of personalized products, if we do not deliver within thirty (30) days from the date of the written Confirmation of Order & Shipment or any other delivery time as indicated by us, you may contact the Client Relations Center or Remote Boutique to cancel the relevant order and we will refund of any sums you pre-paid for products not delivered. </p>
+                        <p>In any event, your sole remedy for any failure by us to deliver the order to you shall be your right to cancel the relevant order and receive a refund of sums you pre-paid us for any products which you have not received.</p>
+                        <p>When estimating your delivery time, please allow time for credit approval, address verification, security checks and order processing. Please note that delivery is always subject to receiving your full payment.</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Type of delivery</th>
+                                    <th>Provider</th>
+                                    <th>Estimated Delivery Lead Time</th>
+                                    <th>Charge to Customer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Standard</th>
+                                    <th>FedEx</th>
+                                    <th>5-7 Business Days*</th>
+                                    <th>Free</th>
+                                </tr>
+                                <tr>
+                                    <th>Express</th>
+                                    <th>FedEx - Now available for products shipped to Alaska or Hawaii</th>
+                                    <th>5-7 Business Days*</th>
+                                    <th>Free</th>
+                                </tr>
+                                <tr>
+                                    <th>Overnight or weekend delivery**</th>
+                                    <th colspan="3">If you wish to have your order delivered in less than 2 Business Days* or on a weekend, please check feasibility with the relevant Sales Channel. If feasible, you may incuradditional fees, which will be communicated to you before your order is placed.</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>*All order delivery date estimations are subject to stock availability and may be delayed for special requests (e.g., bracelet adjustment or engraving).</p>
+                        <p>**Saturday and U.S. federal holidays will not be considered as a regular business day with respect to estimated delivery lead time.</p>
+                        <p>We will require a signature by you or an adult at the delivery address (unless arranged by you otherwise), to confirm the delivery of each product, at which point risk and responsibility for your purchased goods passes to you.  If you have specified a recipient who is not you for delivery purposes (for example, as a gift), then you understand and accept that evidence of a signature by such recipient (or at that delivery address) is evidence of delivery and fulfilment of the sales contract and transfer of responsibility to the recipient in the same way as if the product had been delivered to you. We reserve the right to deliver products only to the person who is the intended recipient of the order as stated on the label of the parcel and to request ID check for verification purposes at the time of delivery. Please refer to our FAQs section or call our Client Relations Center for more information.  Additional steps may apply for boutique pick-up, where available.</p>
+                    </div>
+                </li>
+                <li>
+                    <h3>13. RETURNS AND EXCHANGES<span>expand</span></h3>
+                    <div>
+                        <p>Maison allows you or the Gift Recipient (as defined below) to return Maison products purchased through the Sales Channels within 30 days following delivery, but subject to the further terms and conditions set forth below.</p>
+                        <p><b>(a) &nbsp;&nbsp;&nbsp;Return Process</b></p>
+                        <p>In accordance with these Conditions of Sale, products that have been purchased through the Sales Channels may be returned to any IWC Schaffhausen retail boutique.  Products purchased through the Platforms or Client Relations Center may also be returned to our Maison e-boutique distribution center at the address of our Returns Department. Products that have not been purchased through the Sales Channels may NOT be returned to our e-boutique distribution center. For example, if you purchase a product at a retail boutique, you should return it at a IWC Schaffhausen boutique.</p>
+                        <p>To return an eligible product to our e-boutique distribution center, please contact our Client Relations Center to start your return.  You must keep a proof of return shipment, and we accept no liability in the event that such proof cannot be produced. Only merchandise received by our Maison e-boutique distribution center will be eligible for a refund or exchange.</p>
+                        <p><b>(b) &nbsp;&nbsp;&nbsp;Condition of Returned Products</b></p>
+                        <p>We will verify that the returned product satisfies these Conditions of Sale and, if so, then proceed with the applicable refund or exchange.</p>
+                        <p>Only products in a new and unused state, in perfect condition, with all protective materials in place and tags and stickers attached to them (if applicable), as well as with the original Maison box and delivery package, including all accessories and documents are eligible for return. For example, timepiece bracelets must be returned with the exact links as in the original delivery package. We reserve our right not to accept any return if the product shows signs of wear or has been used or altered from its original condition in any way or, as an alternative, may reduce the amount of any applicable refund or exchange accordingly.  If you have received free items as part of your order, they must be returned with the products.</p>
+                        <p>All returns will be subject to strict Quality Control (“QC”) by us to ensure that the returned products satisfy these requirements. If the products do not meet QC standards, we will refuse the return, and the products will be returned to you.</p>
+                        <p>Failure to comply with these Conditions of Sale will entitle us to refuse the returned product and send it back to you, at your own cost.</p>
+                        <p><b>(c) &nbsp;&nbsp;&nbsp;Products You Cannot Return or Exchange</b></p>
+                        <p>Orders for products that have been personalized or otherwise made for you with bespoke specifications cannot be cancelled and such products cannot be returned for exchange or refund. This includes, without limitation, products that have been engraved or embossed.</p>
+                        <p>If applicable, product(s) and/or services(s) purchased using our finance option cannot be exchanged.</p>
+                        <p><b>(d) &nbsp;&nbsp;&nbsp;Refunds</b></p>
+                        <p>You may return a product purchased through the Sales Channels for refund, provided that the return complies with these Conditions of Sale. Personalized products or similar special-order products are strictly non-refundable.</p>
+                        <p>Only the buyer will be entitled to receive a refund of the purchase price. In no event will a person who has received the product as a gift (i.e. a “<b>Gift Recipient</b>”) be entitled to receive a refund. If you are a Gift Recipient and wish to return a product, please contact the Client Relations Center to discuss your options.</p>
+                        <p>If the return complies with these Conditions of Sale, we will use commercially reasonable endeavours to refund the purchase price to the buyer using the same means of payment as used by the buyer for the initial transaction within fourteen (14) days after receipt of the returned item by the Maison e-boutique distribution center.</p>
+                        <p><b>(e) &nbsp;&nbsp;&nbsp;Exchanges</b></p>
+                        <p>You may return a product purchased through the Sales Channels for exchange with another Maison product, provided that the return complies with these Conditions of Sale.  The sale of the returned product will be cancelled and a new order for the product ordered must be placed.  Should a product be returned to the Maison e-boutique distribution center for exchange with a less expensive product, only the buyer of the returned product will be entitled to receive a refund of the price difference.  If a product is returned for exchange with a more expensive product, you will have to pay the price difference. </p>
+                    </div>
+                </li>
+                <li>
+                    <h3>14. MANUFACTURER’S GUARANTEE AND YOUR LEGAL CONSUMER RIGHTS<span>expand</span></h3>
+                    <div>
+                        <p>We are committed to ensuring that each product strictly complies with our quality criteria and that it has passed all our controls, both technical and aesthetic.</p>
+                        <p>Selected products are covered by the applicable Maison Guarantee.  If you wish to repair a product covered by the applicable Maison Guarantee, please refer to the applicable Maison Guarantee and call our Client Relations Center for more information.</p>
+                        <p>In your capacity as consumer, you may have legal rights under the applicable law of governing the sale of consumer goods; those legal rights are not affected by these Conditions of Sale or the applicable Maison Guarantee.</p>
+                    </div>
+                </li>
+                <li>
+                    <h3>15. COMPLIMENTARY SERVICES<span>expand</span></h3>
+                    <div>
+                        <p>The following complimentary services will be proposed, free of charge, by the Sales Channels:</p>
+                        <p><b>(a) &nbsp;&nbsp;&nbsp;Gift Wrap and Packaging</b></p>
+                        <p>All orders will be shipped with the Maison box gift wrapped in special packaging. You may also add a personalized note that will be printed on a gift card to be included in your order package. Maison reserves the right to reject gift card notes it deems offensive or inappropriate.</p>
+                        <p><b>(a) &nbsp;&nbsp;&nbsp;(b)  Engravings / Embossing</b></p>
+                        <p>Engraving and embossing may be available on specific products.  Please contact the relevant Sales Channel to see if engraving or embossing is available for the product. <b>Orders for personalized products are final, and cannot be cancelled or returned.</b></p>
+                        <p><b>(a) &nbsp;&nbsp;&nbsp;(c)  Strap Exchange / Adjustment</b></p>
+                        <p>A watch strap is delivered in a standard size and may be delivered smaller or larger, upon request. Watch strap adjustment may also be available on certain watch models.  Please contact the Client Relations Center or Remote Boutique for more information.</p>
+                    </div>
+                </li>
+                <li>
+                    <h3>16. REPAIRS<span>expand</span></h3>
+                    <div>
+                        <p>For any repair inquiries relating to a product ordered through the Sales Channels, please refer to our FAQs section or contact our Client Relations Center.</p>
+                    </div>
+                </li>
+                <li>
+                    <h3>17. PRODUCT DESCRIPTIONS<span>expand</span></h3>
+                    <div>
+                        <p>We try to ensure that the product information, including descriptions, dimensions, and colors, provided is accurate and complete. However, we make no guarantees, whether express or implied, in relation to the accuracy, reliability and completeness of such information. In particular and where applicable, any description and information concerning the weight of precious materials and the number of stones and carats are provided as an indication only and may vary slightly.</p>
+                    </div>
+                </li>
+                <li>
+                    <h3>18. LIMITATION OF LIABILITY<span>expand</span></h3>
+                    <div>
+                        <p>To the fullest extent permitted by applicable law, we disclaim and exclude all other terms, conditions and warranties in relation to the products and Sales Channels whether express or implied by statute or otherwise or arising from any previous course of dealing or usage or trade practice.</p>
+                        <p>Nothing in these Conditions of Sale limits or excludes our liability for any liability which cannot be limited or excluded by applicable law.  Subject to the preceding sentence, our aggregate liability to you under these Conditions of Sale for any order whether in contract, tort (including negligence) or otherwise, even if we have been advised of the possibility of such damages, shall in no event exceed the one hundred percent (100%) of the price paid for the product(s) in your order.</p>
+                        <p>Please note that in some jurisdictions, including the State of New Jersey, USA, consumer protection laws do not allow certain exclusions or limitation of warranties or liabilities, and consequently some of the above exclusions and limitations do not apply.</p>
+                    </div>
+                </li>
+                <li>
+                    <h3>19. GENERAL PROVISIONS<span>expand</span></h3>
+                    <div>
+                        <p>If any provision, or part of a provision, of these Conditions of Sale is deemed to be illegal, invalid or unenforceable, the remainder of the provisions of these Conditions of Sale shall be unaffected and shall continue to be fully valid, binding and enforceable.</p>
+                        <p>These Conditions of Sale (and associated terms incorporated by reference) constitute the entire agreement between you and us in relation to the order of products or services, and replace and extinguish all prior agreements, draft agreements, arrangements, undertakings, or collateral contracts of any nature made by the parties, whether oral or written, in relation to such subject matter.</p>
+                        <p>We are not responsible for any failure or delay in performing or complying with our obligations under these Conditions of Sale which arises from any cause beyond our reasonable control.</p>
+                        <p>The waiver by us of a breach of any provision of these Conditions of Sale will not operate to be interpreted as a waiver of any other or subsequent breach.</p>
+                        <p>This contract is between us and you. No other person shall have any rights to enforce any of its terms. However, if you purchase a product as a gift, the recipient of your gift will have the benefit of the applicable Guarantee.</p>
+                    </div>
+                </li>
+                <li>
+                    <h3>20. GOVERNING LAW; AGREEMENT TO ARBITRATION OF CLAIMS<span>expand</span></h3>
+                    <div>
+                        <p><span>Arbitration Required, Except for Small Claims.</span>  Any dispute, controversy or claim arising out of or related to the Conditions of Sale, including the validity, invalidity, breach or termination of the Conditions of Sale, or to any product purchased from Maison through the Sales Channels, and any communications to or between us (a “Dispute”), will be resolved by binding arbitration, rather than in court, except that a consumer or Maison may assert claims in small claims court if such claims qualify.</p>
+                        <p><span>Informal Dispute Resolution.</span>  Before bringing any dispute in arbitration, you and Maison agree that you will first notify the other party and make reasonable efforts for a period of thirty (30) days to resolve amicably any Dispute. This requirement is a pre-condition, and no claim shall be filed in arbitration (or small claims court) until this provision is first met.</p>
+                        <p><span>Jury Trial and Class Action Waiver.</span> You understand and agree that you are waiving your right to sue or go to court to defend your rights, including to a trial by jury, under these Conditions of Sale. IN ADDITION, YOU AND MAISON UNDERSTAND AND AGREE THAT THE PARTIES WILL PURSUE ANY DISPUTE ON AN INDIVIDUAL BASIS.  THE ARBITRATOR IS EMPOWERED TO RESOLVE THE DISPUTE WITH THE SAME REMEDIES AVAILABLE IN COURT, INCLUDING PUBLIC INJUNCTIVE RELIEF IF YOU ARE LOCATED IN CALIFORNIA..  YOU AND MAISON AGREE THAT EACH MAY NOT BRING A CLAIM AGAINST THE OTHER AS PART OF ANY CLASS ACTION, CLASS ARBITRATION, OR OTHER REPRESENTATIVE PROCEEDING.</p>
+                        <p><span>How Arbitration Works.</span>  In order to file a complaint for arbitration after you and we have failed to resolve our Dispute through the informal process described above, you can go to the American Arbitration Association’s website at https://www.adr.org/Support or call 1-800-778-7879. You or we must include documents sufficient to demonstrate that we followed the information resolution process with the filing of any arbitration complaint. At your election, the arbitration will be conducted through video conference, on the papers, or in the state and county where you reside (as determined by your address on file with Maison) or as otherwise agreed between the parties by the American Arbitration Association (“AAA”) under its rules, including the AAA's Supplementary Procedures for Consumer-Related Disputes, also available from AAA. Payment of all filing, administration and arbitrator fees will be governed by the AAA's rules. These Conditions of Sale shall be governed by and construed in accordance with the Federal Arbitration Act and, where applicable, the laws of the State of New York, without reference to conflict of laws provisions.</p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <a href="#" class="btnTop">
+        <span class="material-icons-outlined">
+            arrow_upward
+        </span>
+    </a>
+    <footer>
+        <div>
+            <div>
+                <h2 class="unfold">CUSTOMER CARE</h2>
+                <ul>
+                    <li><a href="conditionOfSale.html">Condition of Sale</a></li>
+                    <li><a href="warranty_international.html">Warranty</a></li>
+                    <li><a href="registerTimepiece.html">Register Timepiece</a></li>
+                    <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+                    <li><a href="faq_service.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="unfold">PRIVACY&TERMS</h2>
+                <ul>
+                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                    <li><a href="termsOfUse.html">Terms of Use</a></li>
+                    <li><a href="accessibility.html">Accessibility</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="unfold">MADE AT IWC</h2>
+                <ul>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="sustainability.html">Sustainability</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+                <div>
+                    <input type="email" placeholder="Email Address (Required)">
+                    <input type="button" value="east" class="material-icons-outlined">
+                </div>
+                <a href="contactUs.html" class="btn-square">CONTACT TO US</a>
+            </div>
+        </div>
+        <div>
+            <p>© International Watch Company. 2024</p>
+            <ul>
+                <li><a href="https://www.facebook.com/IWCWatches">facebook</a></li>
+                <li><a href="http://www.instagram.com/iwcwatches">instagram</a></li>
+                <li><a href="http://www.x.com/iwc">x</a></li>
+                <li><a href="http://www.youtube.com/iwcwatches">youtube</a></li>
+                <li><a href="https://www.pinterest.com/iwcwatches/">pinterest</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

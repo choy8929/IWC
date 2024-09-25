@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iwc</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/iwc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+
+<body>
+    <div class="popup search">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>TYPE IN THE KEY WORDS</h2>
+            <div>
+                <input type="search" placeholder="Please Enter Your Search Term">
+                <input type="submit" value="SEARCH">
+                <ul>
+                    <li><b>MOST COMMONLY SEARCHED</b></li>
+                    <li>CHRONOGRAPH</li>
+                    <li>TOP GUN</li>
+                    <li>AUTOMATIC</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="popup perm_identity">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>SIGN INTO IWC</h2>
+            <p>Please sign in here by entering your email address and your password</p>
+            <form action="index_after.html">
+                <ul>
+                    <li>
+                        <label for="userEmail">Email (Required)</label>
+                        <input type="email" id="userEmail" placeholder="Enter Your Email" required>
+                        <p>
+                            <span class="material-icons-outlined">info </span>
+                            Email Validation
+                        </p>
+                    </li>
+                    <li>
+                        <label for="userPW">Password (Required)</label>
+                        <input type="password" id="userPW" placeholder="Enter Your PassWord" required>
+                        <span class="material-icons-outlined toggleVisible">visibility_off</span>
+                    </li>
+                </ul>
+                <input type="submit" value="LOG IN">
+            </form>
+            <a href="forgotPassword.html">Forgot your password?</a>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <h2>CREATE NEW ACCOUNT</h2>
+                    <p>
+                        Register online now to personalize your account,
+                        <span>receive updates or catalogues, manage your
+                            orders and wish lists.</span>
+                    </p>
+                </div>
+                <a href="signUp.html">REGISTER</a>
+            </div>
+        </div>
+    </div>
+    <div class="popup favorite_border">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>WISHLIST</h2>
+            <span>3 ITEMS SAVED</span>
+            <ul>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_048.png" alt="product image">
+                    <div>
+                        <b>BIG PILOT'S WATCH AMG G 63</b>
+                        <small>18 ct Armor Gold® case, Automatic, 46.2 mm</small>
+                        <mark>$ 8,500</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_042.png" alt="product image">
+                    <div>
+                        <b>PILOT'S WATCH MARK XX</b>
+                        <small>Stainless steel case, Automatic, 40.0 mm</small>
+                        <mark>$ 6,150</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_067.png" alt="product image">
+                    <div>
+                        <b>PILOT'S WATCH CHRONOGRAPH 41 TOP GUN OCEANA</b>
+                        <small>Ceramic case, Automatic, 41.9 mm</small>
+                        <mark>$ 11,700</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="popup shopping_bag">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>SHOPPING BAG</h2>
+            <p>Free delivery and return : Ships in 3-5 business days</p>
+            <div>
+                <ul>
+                    <li>
+                        <input type="button" value="remove" class="material-icons-outlined">
+                        <img src="images/productThumbnail_048.png" alt="product image">
+                        <span>IW501201</span>
+                        <b>BIG PILOT'S WATCH AMG G 63</b>
+                        <small>18 ct Armor Gold® case, Automatic, 46.2 mm</small>
+                        <mark>$ 8,500</mark>
+                    </li>
+                    <li>
+                        <input type="button" value="remove" class="material-icons-outlined">
+                        <img src="images/productThumbnail_042.png" alt="product image">
+                        <span>IW328206</span>
+                        <b>PILOT'S WATCH MARK XX</b>
+                        <small>Stainless steel case, Automatic, 40.0 mm</small>
+                        <mark>$ 6,150</mark>
+                    </li>
+                </ul>
+                <div>
+                    <span>
+                        SUBTOTAL
+                        <mark>$ 14,650</mark>
+                    </span>
+                    <span>
+                        DELIVERY
+                        <mark>FREE</mark>
+                    </span>
+                    <span>
+                        TAXES
+                        <mark>To be calculated</mark>
+                    </span>
+                    <span>
+                        TOTAL
+                        <mark>$ 14,650</mark>
+                    </span>
+                    <p>Pay your order by Wire Transfer (only available with phone sales service) or the following online
+                        secured payment methods</p>
+                    <ul>
+                        <li><img src="images/paymentmethod__master.png" alt="master"></li>
+                        <li><img src="images/paymentmethod__union.png" alt="union pay"></li>
+                        <li><img src="images/paymentmethod__visa.png" alt="visa"></li>
+                        <li><img src="images/paymentmethod__amex.png" alt="american express"></li>
+                        <li><img src="images/paymentmethod__apple.png" alt="apple pay"></li>
+                        <li><img src="images/paymentmethod__wecp.png" alt="we chat pay"></li>
+                        <li><img src="images/paymentmethod__ppal.png" alt="paypal"></li>
+                        <li><img src="images/paymentmethod__gpay.png" alt="google pay"></li>
+                        <li><img src="images/paymentmethod__alix.png" alt="ali express pay"></li>
+                    </ul>
+                    <a href="checkout.html">CHECKOUT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup menu">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2><a href="/"><img src="images/logo.svg" alt="logo"></a></h2>
+        </div>
+        <ul>
+            <li><a href="watches.html">WATHCES</a></li>
+            <li><a href="sv_types.html">SERVICES</a></li>
+            <li><a href="findStore.html">STORES</a></li>
+            <li><a href="experience.html">EXPERIENCE</a></li>
+            <li><a href="journal.html">JOURNAL</a></li>
+        </ul>
+        <ol>
+            <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+            <li><a href="sv_extendWarranty.html">Extend Your Warranty</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ol>
+        <div>
+            <span>United States | English</span>
+            <a href="tel:+18004329330">1-800-432-9330</a>
+        </div>
+    </div>
+    <!-- popup -->
+
+    <header class="blackTheme">
+        <div>
+            <div>
+                <span>1-800-432-9330</span>
+                <span>United States | English</span>
+            </div>
+            <ul>
+                <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+                <li><a href="sv_extendWarranty.html">Extend Your Warranty</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <input type="button" value="menu" class="material-icons-outlined mui">
+            <h1><a href="/"><img src="images/logo_wh.svg" alt="iwc"></a></h1>
+            <nav>
+                <input type="button" value="close" class="material-icons-outlined">
+                <ul>
+                    <li><a href="watches.html">WATCHES</a></li>
+                    <li><a href="sv_careAdvice.html">SERVICES</a></li>
+                    <li><a href="findStore.html">STORES</a></li>
+                    <li><a href="experience.html">EXPERIENCE</a></li>
+                    <li><a href="journal.html">JOURNAL</a></li>
+                </ul>
+            </nav>
+            <ul>
+                <li>
+                    <input type="button" value="search" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="perm_identity" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="favorite_border" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="shopping_bag" class="material-icons-outlined utility">
+                </li>
+            </ul>
+        </div>
+        <div class="mui">
+            <div>
+                <input type="button" value="menu" class="material-icons-outlined">
+                <h1><a href="/"><img src="images/logo_wh.svg" alt="iwc"></a></h1>
+                <ul>
+                    <li>
+                        <input type="button" value="search" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="perm_identity" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="favorite_border" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="shopping_bag" class="material-icons-outlined utility">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="warrantyContainer international">
+        <div>
+            <small>CUSTOMER CARE</small>
+            <h2>WARRANTY</h2>
+            <ol class="mCustomScrollbar">
+                <li class="active"><a href="warranty_international.html">INTERNATIONAL LIMITED</a></li>
+                <li><a href="warranty_svGuarantee.html">SERVICE GUARANTEE</a></li>
+                <li><a href="warranty_myIWC.html">MY IWC</a></li>
+            </ol>
+        </div>
+        <div>
+            <h3>INTERNATIONAL LIMITED WARRANTY</h3>
+            <p>The following International Limited Warranty applies to IWC watches purchased in the original labelled container/box in any country (including the United States of America, Canada and Australia) and
+                presented for warranty service in the same or any other country.</p>
+            <div>
+                <h4>WHAT THE INTERNATIONAL LIMITED WARRANTY COVERS AND FOR HOW LONG</h4>
+                <p>Your watch has been made according to the strict quality standards of IWC and with all the care of highly qualified watchmakers. The watch is covered by this International Limited Warranty against defects
+                    in manufacturing and materials. Please contact one of the authorized IWC boutiques, IWC retailers or IWC
+                    service centres located around the world (service contacts can be found at <a href="findStore.html">www.iwc.com/stores</a>) and they will be able to provide warranty service
+                    as defined herein.</p>
+                <p>IWC warrants its product against defects in materials and manufacturing for a period of twenty-four (24) months from the date of purchase stated on your original invoice and/or the warranty booklet (the
+                    “Warranty Period”). If the product is returned during the Warranty Period, IWC will repair or replace any defective watch or part free of charge within a reasonable time after the product is returned,
+                    subject to the exclusions mentioned hereunder and to the right to charge for shipping costs. Upon expiration of the Warranty Period, any repairs will be subject to a service charge.</p>
+                <h4>HOW TO OBTAIN SERVICE</h4>
+                <p>You may obtain service by bringing or sending the watch in the original labelled container/box to your authorized IWC boutique, IWC retailer or to any IWC service centre. You may be responsible for
+                    transportation costs, including, but not limited to, postage, insurance and packing materials. We recommend that any shipments to us include certified delivery and insurance.</p>
+                <p>In order to obtain service through this International Limited Warranty, the returned watch must be accompanied by the original International Limited Warranty card/certificate that was included with
+                    the watch in the container/box at the time of purchase, duly completed, dated, stamped and signed by an authorized IWC boutique or IWC retailer. This International Limited Warranty card/certificate may
+                    only be completed by an authorized IWC boutique or IWC retailer. </p>
+                <h4>WHAT IS NOT COVERED UNDER THE INTERNATIONAL LIMITED WARRANTY</h4>
+                <p>The International Limited Warranty does not cover:</p>
+                <p>(a) defects and damages due to loss, theft, flood, earthquake or fire, or other causes beyond our control;<br>
+                    (b) defects and damages resulting from misuse or negligence, or from accident;<br>
+                    (c) defects and damages caused by improper use (knocks; dents; crushing to the case, crystal, bracelet or strap, etc.), alterations (functionality or capability), tampering, dismantling, modifications,
+                    or services and repairs completed by anyone other than an authorized IWC boutique, IWC retailer or IWC service centre, or by the use of components other than those recommended by IWC;<br>
+                    (d) defects and damages due to normal wear and tear;<br>
+                    (e) watches where the serial number originally imprinted on the watch case is removed or not clearly legible, or where any part of the original watch back or any original number has been removed,
+                    changed, altered, replaced, erased or defaced;<br>
+                    (f) lack of accuracy of the watch if within the limits of average industry tolerance;<br>
+                    (g) routine maintenance and cleaning.</p>
+                <h4>ADDITIONAL GUARANTEE CONDITIONS APPLICABLE IN THE UNITED STATES OF AMERICA AND CANADA ONLY:</h4>
+                <p><b>LIMITED WARRANTY</b></p>
+                <p>EXCEPT TO THE EXTENT PROHIBITED BY APPLICABLE LAW, THE INTERNATIONAL LIMITED WARRANTY SET FORTH ABOVE IS A LIMITED WARRANTY AND SHALL BE THE EXCLUSIVE MANUFACTURER’S WARRANTY IN LIEU OF ANY OTHER EXPRESS
+                    WARRANTIES. NEITHER THIS LIMITED WARRANTY NOR ANY OTHER WARRANTIES, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTY OF MERCHANTABILITY OR IMPLIED WARRANTY OF
+                    FITNESS FOR A PARTICULAR PURPOSE, SHALL EXTEND BEYOND THE PERIOD OF TWENTY-FOUR (24) MONTHS FROM THE DATE OF PURCHASE. FOR A PERIOD OF TWENTY-FOUR (24) MONTHS FROM THE DATE OF PURCHASE, IWC WILL, AT ITS SOLE
+                    DISCRETION, REPAIR OR REPLACE ANY DEFECTIVE WATCH OR PART UNDER THE LIMITED WARRANTY FREE OF CHARGE SUBJECT TO THE RIGHT TO CHARGE FOR SHIPPING COSTS, AND SUBJECT TO THE FOLLOWING CONDITIONS:</p>
+                <p>THE RETURNED WATCH MUST BE ACCOMPANIED BY THE IWC INTER­NATIONAL WARRANTY CARD/CERTIFICATE (ENCLOSED WITH THE WATCH), DULY COMPLETED, DATED, STAMPED, AND SIGNED BY AN AUTHORIZED IWC BOUTIQUE OR IWC
+                    RETAILER. THIS IWC INTERNATIONAL WARRANTY CARD/CERTIFICATE MAY ONLY BE COMPLETED BY AN AUTHORIZED IWC BOUTIQUE OR IWC RETAILER.</p>
+                <p>THE SERIAL NUMBER ORIGINALLY IMPRINTED ON THE WATCH CASE MUST BE CLEARLY LEGIBLE AND NO PART OF THE ORIGIN­AL WATCH BACK OR ORIGINAL SERIAL NUMBER MAY BE REMOVED, CHANGED, ALTERED, REPLACED, ERASED OR
+                    DEFACED.</p>
+                <p>IN ADDITION TO THE FOREGOING, ALL OTHER CONDITIONS SET FORTH IN THE INTERNATIONAL LIMITED WARRANTY ARE  APPLICABLE TO THE IWC LIMITED WARRANTY IN CANADA AND THE UNITED STATES OF AMERICA.</p>
+                <p>FAILURE TO ADHERE TO ANY OF THESE CONDITIONS VOIDS ALL WARRANTY RIGHTS. THIS WARRANTY IS THE SOLE AND EXCLUSIVE REMEDY. IWC SHALL NOT BE LIABLE FOR ANY INCIDENTAL OR CONSEQUENTIAL DAMAGES. IWC does not
+                    authorize any retailer or seller of its products to make any warranties beyond this Limited Warranty or to otherwise assume for IWC any obligations or liability in connection with the sale or distribution
+                    of its products. Some states, provinces or terri­tories do not allow limitations on how long an implied warranty lasts or the exclusion or limitation of incidental or consequential damages, thus the above
+                    limitations or exclusions may not apply to you.</p>
+                <h4>ADDITIONAL GUARANTEE CONDITIONS APPLICABLE IN AUSTRALIA ONLY:</h4>
+                <p><b>MANDATORY STATUTORY RIGHTS</b></p>
+                <p>Our goods come with guarantees that cannot be excluded under the Australian Consumer Law. You are entitled to a replacement or refund for a major failure and compensation for any other reasonably
+                    foreseeable loss or damage. You are also entitled to have the goods repaired or replaced if the goods fail to be of acceptable quality and the failure does not amount to a major failure.</p>
+                <p>The Mandatory Statutory Rights apply only to watches purchased in Australia and presented for guarantee services in Australia. If you seek to rely on your Mandatory Statutory Rights under the Australian
+                    Consumer Law in relation to a defect in goods supplied, you may be entitled to recover any reasonably foreseeable loss or damage that results from the defect. This may include the costs associated with
+                    transporting the watch to Richemont Australia Pty. Ltd. or an authorized IWC boutique, IWC retailer or IWC service centre. The International Limited Warranty gives you further benefits, which are in
+                    addition to your rights and remedies under the Australian Consumer Law and any other laws in relation to the goods. Subject to your Mandatory Statutory Rights under the Australian Consumer Law, IWC warrants
+                    its product against defects in materials and manufacturing for the Warranty Period. If the product is returned during the Warranty Period, IWC will, at its sole discretion, repair or replace any
+                    defective watch or part free of charge within a reasonable time after the product is returned, subject to the exclusions mentioned in “What is not covered under the International Limited Warranty” here above.
+                    Upon expiration of the Warranty Period, any repairs will be subject to a service charge.</p>
+                <p>Subject to your Mandatory Statutory Rights under the Australian Consumer Law, if you make a claim under this International Limited Warranty (instead of your Mandatory Statutory Rights) you may be
+                    responsible for transportation costs, including but not limited to postage, insurance and packing materials. We recommend that any shipment to us include certified delivery and insurance.</p>
+                <p><b>HOW STATE AND OTHER LAWS APPLY</b></p>
+                <p>The International Limited Warranty gives you specific legal rights, and you may also have other rights which vary in the United States of America from state to state and may in addition vary from one
+                    country, province or territory to another.</p>
+                <p><b>IWC SERVICE CONTACTS</b></p>
+                <p>Only authorized IWC boutiques, IWC retailers and IWC service centres are entitled to provide guarantee service as defined herein. </p>
+            </div>
+            <img src="images/warranty_03.png" alt="iwc warranty">
+        </div>
+    </div>
+
+    <a href="#" class="btnTop">
+        <span class="material-icons-outlined">
+            arrow_upward
+        </span>
+    </a>
+    <footer>
+        <div>
+            <div>
+                <h2 class="unfold">CUSTOMER CARE</h2>
+                <ul>
+                    <li><a href="conditionOfSale.html">Condition of Sale</a></li>
+                    <li><a href="warranty_international.html">Warranty</a></li>
+                    <li><a href="registerTimepiece.html">Register Timepiece</a></li>
+                    <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+                    <li><a href="faq_service.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="unfold">PRIVACY&TERMS</h2>
+                <ul>
+                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                    <li><a href="termsOfUse.html">Terms of Use</a></li>
+                    <li><a href="accessibility.html">Accessibility</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="unfold">MADE AT IWC</h2>
+                <ul>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="sustainability.html">Sustainability</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+                <div>
+                    <input type="email" placeholder="Email Address (Required)">
+                    <input type="button" value="east" class="material-icons-outlined">
+                </div>
+                <a href="contactUs.html" class="btn-square">CONTACT TO US</a>
+            </div>
+        </div>
+        <div>
+            <p>© International Watch Company. 2024</p>
+            <ul>
+                <li><a href="https://www.facebook.com/IWCWatches">facebook</a></li>
+                <li><a href="http://www.instagram.com/iwcwatches">instagram</a></li>
+                <li><a href="http://www.x.com/iwc">x</a></li>
+                <li><a href="http://www.youtube.com/iwcwatches">youtube</a></li>
+                <li><a href="https://www.pinterest.com/iwcwatches/">pinterest</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iwc</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/iwc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+
+<body>
+    <div class="popup search">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>TYPE IN THE KEY WORDS</h2>
+            <div>
+                <input type="search" placeholder="Please Enter Your Search Term">
+                <input type="submit" value="SEARCH">
+                <ul>
+                    <li><b>MOST COMMONLY SEARCHED</b></li>
+                    <li>CHRONOGRAPH</li>
+                    <li>TOP GUN</li>
+                    <li>AUTOMATIC</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="popup perm_identity">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>SIGN INTO IWC</h2>
+            <p>Please sign in here by entering your email address and your password</p>
+            <form action="index_after.html">
+                <ul>
+                    <li>
+                        <label for="userEmail">Email (Required)</label>
+                        <input type="email" id="userEmail" placeholder="Enter Your Email" required>
+                        <p>
+                            <span class="material-icons-outlined">info </span>
+                            Email Validation
+                        </p>
+                    </li>
+                    <li>
+                        <label for="userPW">Password (Required)</label>
+                        <input type="password" id="userPW" placeholder="Enter Your PassWord" required>
+                        <span class="material-icons-outlined toggleVisible">visibility_off</span>
+                    </li>
+                </ul>
+                <input type="submit" value="LOG IN">
+            </form>
+            <a href="forgotPassword.html">Forgot your password?</a>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <h2>CREATE NEW ACCOUNT</h2>
+                    <p>
+                        Register online now to personalize your account,
+                        <span>receive updates or catalogues, manage your orders and wish lists.</span>
+                    </p>
+                </div>
+                <a href="signUp.html">REGISTER</a>
+            </div>
+        </div>
+    </div>
+    <div class="popup favorite_border">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>WISHLIST</h2>
+            <span>3 ITEMS SAVED</span>
+            <ul>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_048.png" alt="product image">
+                    <div>
+                        <b>BIG PILOT'S WATCH AMG G 63</b>
+                        <small>18 ct Armor Gold® case, Automatic, 46.2 mm</small>
+                        <mark>$ 8,500</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_042.png" alt="product image">
+                    <div>
+                        <b>PILOT'S WATCH MARK XX</b>
+                        <small>Stainless steel case, Automatic, 40.0 mm</small>
+                        <mark>$ 6,150</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_067.png" alt="product image">
+                    <div>
+                        <b>PILOT'S WATCH CHRONOGRAPH 41 TOP GUN OCEANA</b>
+                        <small>Ceramic case, Automatic, 41.9 mm</small>
+                        <mark>$ 11,700</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="popup shopping_bag">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>SHOPPING BAG</h2>
+            <p>Free delivery and return : Ships in 3-5 business days</p>
+            <div>
+                <ul>
+                    <li>
+                        <input type="button" value="remove" class="material-icons-outlined">
+                        <img src="images/productThumbnail_048.png" alt="product image">
+                        <span>IW501201</span>
+                        <b>BIG PILOT'S WATCH AMG G 63</b>
+                        <small>18 ct Armor Gold® case, Automatic, 46.2 mm</small>
+                        <mark>$ 8,500</mark>
+                    </li>
+                    <li>
+                        <input type="button" value="remove" class="material-icons-outlined">
+                        <img src="images/productThumbnail_042.png" alt="product image">
+                        <span>IW328206</span>
+                        <b>PILOT'S WATCH MARK XX</b>
+                        <small>Stainless steel case, Automatic, 40.0 mm</small>
+                        <mark>$ 6,150</mark>
+                    </li>
+                </ul>
+                <div>
+                    <span>
+                        SUBTOTAL
+                        <mark>$ 14,650</mark>
+                    </span>
+                    <span>
+                        DELIVERY
+                        <mark>FREE</mark>
+                    </span>
+                    <span>
+                        TAXES
+                        <mark>To be calculated</mark>
+                    </span>
+                    <span>
+                        TOTAL
+                        <mark>$ 14,650</mark>
+                    </span>
+                    <p>Pay your order by Wire Transfer (only available with phone sales service) or the following online
+                        secured payment methods</p>
+                    <ul>
+                        <li><img src="images/paymentmethod__master.png" alt="master"></li>
+                        <li><img src="images/paymentmethod__union.png" alt="union pay"></li>
+                        <li><img src="images/paymentmethod__visa.png" alt="visa"></li>
+                        <li><img src="images/paymentmethod__amex.png" alt="american express"></li>
+                        <li><img src="images/paymentmethod__apple.png" alt="apple pay"></li>
+                        <li><img src="images/paymentmethod__wecp.png" alt="we chat pay"></li>
+                        <li><img src="images/paymentmethod__ppal.png" alt="paypal"></li>
+                        <li><img src="images/paymentmethod__gpay.png" alt="google pay"></li>
+                        <li><img src="images/paymentmethod__alix.png" alt="ali express pay"></li>
+                    </ul>
+                    <a href="checkout.html">CHECKOUT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup menu">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2><a href="/"><img src="images/logo.svg" alt="logo"></a></h2>
+        </div>
+        <ul>
+            <li><a href="watches.html">WATHCES</a></li>
+            <li><a href="sv_types.html">SERVICES</a></li>
+            <li><a href="findStore.html">STORES</a></li>
+            <li><a href="experience.html">EXPERIENCE</a></li>
+            <li><a href="journal.html">JOURNAL</a></li>
+        </ul>
+        <ol>
+            <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+            <li><a href="sv_extendWarranty.html">Extend Your Warranty</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ol>
+        <div>
+            <span>United States | English</span>
+            <a href="tel:+18004329330">1-800-432-9330</a>
+        </div>
+    </div>
+    <!-- popup -->
+
+    <header class="blackTheme">
+        <div>
+            <div>
+                <span>1-800-432-9330</span>
+                <span>United States | English</span>
+            </div>
+            <ul>
+                <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+                <li><a href="sv_extendWarranty.html">Extend Your Warranty</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <input type="button" value="menu" class="material-icons-outlined mui">
+            <h1><a href="/"><img src="images/logo_wh.svg" alt="iwc"></a></h1>
+            <nav>
+                <input type="button" value="close" class="material-icons-outlined">
+                <ul>
+                    <li><a href="watches.html">WATCHES</a></li>
+                    <li><a href="sv_careAdvice.html">SERVICES</a></li>
+                    <li><a href="findStore.html">STORES</a></li>
+                    <li><a href="experience.html">EXPERIENCE</a></li>
+                    <li><a href="journal.html">JOURNAL</a></li>
+                </ul>
+            </nav>
+            <ul>
+                <li>
+                    <input type="button" value="search" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="perm_identity" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="favorite_border" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="shopping_bag" class="material-icons-outlined utility">
+                </li>
+            </ul>
+        </div>
+        <div class="mui">
+            <div>
+                <input type="button" value="menu" class="material-icons-outlined">
+                <h1><a href="/"><img src="images/logo_wh.svg" alt="iwc"></a></h1>
+                <ul>
+                    <li>
+                        <input type="button" value="search" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="perm_identity" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="favorite_border" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="shopping_bag" class="material-icons-outlined utility">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="listContainer pilots">
+        <div>
+            <div>
+                <h2>
+                    <small>TOOL FOR MODERN-DAY EXPLORERS</small>
+                    PILOT'S WATCHES
+                </h2>
+                <p>IWC Pilot’s Watches introduced the cockpit-instrument look for classic Pilot’s watches and enjoy
+                    global renown as precise timepieces with outstanding technology.</p>
+                <ol class="mCustomScrollbar">
+                    <li><a href="pilotsClassic.html">CLASSIC WATCHES</a></li>
+                    <li class="active"><a href="pilotsPerform.html">PERFORMANCE MATERIALS</a></li>
+                    <li><a href="pilotsAntoine.html">ANTOINE DE SAINT EXUPÉRY</a></li>
+                </ol>
+            </div>
+        </div>
+        <div>
+            <div class="filterOnOff">
+                <b>
+                    FILTER BY
+                    <span class="material-icons-outlined">
+                        expand_more
+                    </span>
+                </b>
+            </div>
+            <div>
+                <b>
+                    FILTER BY
+                    <span>:</span>
+                    <span class="material-icons-outlined">
+                        expand_more
+                    </span>
+                </b>
+                <form>
+                    <fieldset>
+                        <legend>CASE SIZE</legend>
+                        <input type="checkbox" id="34to39">
+                        <label for="34to39">34-39 mm</label>
+                        <input type="checkbox" id="40to43">
+                        <label for="40to43">40-43 mm</label>
+                        <input type="checkbox" id="44+">
+                        <label for="44+">44+ mm</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>DIAL COLOUR</legend>
+                        <input type="checkbox" id="Blue">
+                        <label for="Blue">Blue</label>
+                        <input type="checkbox" id="Black">
+                        <label for="Black">Black</label>
+                        <input type="checkbox" id="Brown">
+                        <label for="Brown">Brown</label>
+                        <input type="checkbox" id="Gray">
+                        <label for="Gray">Gray</label>
+                        <input type="checkbox" id="Green">
+                        <label for="Green">Green</label>
+                        <input type="checkbox" id="Silver">
+                        <label for="Silver">Silver</label>
+                        <input type="checkbox" id="White">
+                        <label for="White">White</label>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <ul class="productList">
+            <li class="active">
+                <img src="images/listPage_pilots_perform.png" alt="performance materials">
+                <p>
+                    <small>PILOT'S WATCHES</small>
+                    <span>PERFORMANCE MATERIALS</span>
+                    The search for innovative materials which allow for advanced functionalities is a central component in IWC's approach to engineering and shapes the bold aesthetics of these watches.
+                </p>
+            </li>
+            <li class="active">
+                <a href="productDetail044.html">
+                    <img src="images/productThumbnail_044.png" alt="product image">
+                </a>
+                <div>
+                    <div>
+                        <span>
+                            <b>BIG PILOT’S WATCH 43 TOP GUN</b>
+                            <input type="button" value="favorite_border" class="material-icons-outlined toggleWish">
+                        </span>
+                        <small>Ceramic case, Automatic, 43.8 mm</small>
+                    </div>
+                    <span class="exclusive">
+                        <mark>$ 10,500</mark>
+                    </span>
+                </div>
+            </li>
+            <li class="active">
+                <a href="productDetail045.html">
+                    <img src="images/productThumbnail_045.png" alt="product image">
+                </a>
+                <div>
+                    <div>
+                        <span>
+                            <b>BIG PILOT’S WATCH PERPETUAL CALENDAR TOP GUN CERATANIUM®</b>
+                            <input type="button" value="favorite_border" class="material-icons-outlined toggleWish">
+                        </span>
+                        <small>Ceratanium® case, Automatic, 46.2 mm</small>
+                    </div>
+                    <span class="exclusive">
+                        <mark>$ 56,700</mark>
+                    </span>
+                </div>
+            </li>
+            <li class="active">
+                <a href="productDetail046.html">
+                    <img src="images/productThumbnail_046.png" alt="product image">
+                </a>
+                <div>
+                    <div>
+                        <span>
+                            <b>BIG PILOT’S WATCH PERPETUAL CALENDAR TOP GUN LAKE TAHOE</b>
+                            <input type="button" value="favorite_border" class="material-icons-outlined toggleWish">
+                        </span>
+                        <small>Ceramic case, Automatic, 46.5 mm</small>
+                    </div>
+                    <span class="exclusive">
+                        <mark>$ 40,900</mark>
+                    </span>
+                </div>
+            </li>
+            <li class="active">
+                <a href="productDetail047.html">
+                    <img src="images/productThumbnail_047.png" alt="product image">
+                </a>
+                <div>
+                    <div>
+                        <span>
+                            <b>BIG PILOT’S WATCH TOP GUN EDITION “MOJAVE DESERT”</b>
+                            <input type="button" value="favorite_border" class="material-icons-outlined toggleWish">
+                        </span>
+                        <small>Ceramic case, Automatic, 46.0 mm</small>
+                    </div>
+                    <span class="exclusive">
+                        <mark>$ 16,300</mark>
+                    </span>
+                </div>
+            </li>
+            <li class="active">
+                <a href="productDetail048.html">
+                    <img src="images/productThumbnail_048.png" alt="product image">
+                </a>
+                <div>
+                    <div>
+                        <span>
+                            <b>BIG PILOT'S WATCH AMG G 63</b>
+                            <input type="button" value="favorite_border" class="material-icons-outlined toggleWish">
+                        </span>
+                        <small>18 ct Armor Gold® case, Automatic, 46.2 mm</small>
+                    </div>
+                    <span>
+                        <mark>$ 33,400</mark>
+                        2 Variations
+                    </span>
+                </div>
+            </li>
+            <li class="active">
+                <a href="productDetail050.html">
+                    <img src="images/productThumbnail_050.png" alt="product image">
+                </a>
+                <div>
+                    <div>
+                        <span>
+                            <b>PILOT’S WATCH AUTOMATIC 41 BLACK ACES</b>
+                            <input type="button" value="favorite_border" class="material-icons-outlined toggleWish">
+                        </span>
+                        <small>Ceramic case, Automatic, 41.0 mm</small>
+                    </div>
+                    <span class="exclusive">
+                        <mark>$ 6,800</mark>
+                    </span>
+                </div>
+            </li>
+            <li class="active">
+                <a href="productDetail051.html">
+                    <img src="images/productThumbnail_051.png" alt="product image">
+                </a>
+                <div>
+                    <div>
+                        <span>
+                            <b>PILOT’S WATCH AUTOMATIC TOP GUN</b>
+                            <input type="button" value="favorite_border" class="material-icons-outlined toggleWish">
+                        </span>
+                        <small>Ceramic case, Automatic, 41.0 mm</small>
+                    </div>
+                    <span class="exclusive">
+                        <mark>$ 6,350</mark>
+                    </span>
+                </div>
+            </li>
+            <li class="active">
+                <a href="productDetail052.html">
+                    <img src="images/productThumbnail_052.png" alt="product image">
+                </a>
+                <div>
+                    <div>
+                        <span>
+                            <b>PILOT’S WATCH CHRONOGRAPH 41 EDITION “MERCEDES-AMG PETRONAS FORMULA ONE™ TEAM”</b>
+                            <input type="button" value="favorite_border" class="material-icons-outlined toggleWish">
+                        </span>
+                        <small>Titanium case, Automatic, 41.0 mm</small>
+                    </div>
+                    <span class="exclusive">
+                        <mark>$ 8,350</mark>
+                    </span>
+                </div>
+            </li>
+            <li class="active">
+                <a href="productDetail054.html">
+                    <img src="images/productThumbnail_054.png" alt="product image">
+                </a>
+                <div>
+                    <div>
+                        <span>
+                            <b>PILOT’S WATCH CHRONOGRAPH 41 TOP GUN CERATANIUM®</b>
+                            <input type="button" value="favorite_border" class="material-icons-outlined toggleWish">
+                        </span>
+                        <small>Ceratanium® case, Automatic, 41.0 mm</small>
+                    </div>
+                    <span class="exclusive">
+                        <mark>$ 12,600</mark>
+                    </span>
+                </div>
+            </li>
+            <li class="active">
+                <a href="productDetail055.html">
+                    <img src="images/productThumbnail_055.png" alt="product image">
+                </a>
+                <div>
+                    <div>
+                        <span>
+                            <b>PILOT’S WATCH CHRONOGRAPH TOP GUN</b>
+                            <input type="button" value="favorite_border" class="material-icons-outlined toggleWish">
+                        </span>
+                        <small>Ceramic case, Automatic, 44.5 mm</small>
+                    </div>
+                    <span>
+                        <mark>$ 8,950</mark>
+                        3 Variations
+                    </span>
+                </div>
+            </li>
+            <li>
+                <a href="productDetail058.html">
+                    <img src="images/productThumbnail_058.png" alt="product image">
+                </a>
+                <div>
+                    <div>
+                        <span>
+                            <b>PILOT’S WATCH DOUBLE CHRONOGRAPH TOP GUN CERATANIUM®</b>
+                            <input type="button" value="favorite_border" class="material-icons-outlined toggleWish">
+                        </span>
+                        <small>Ceratanium® case, Automatic, 44.0 mm</small>
+                    </div>
+                    <span class="exclusive">
+                        <mark>$ 16,100</mark>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <a href="productDetail059.html">
+                    <img src="images/productThumbnail_059.png" alt="product image">
+                </a>
+                <div>
+                    <div>
+                        <span>
+                            <b>PILOT’S WATCH PERFORMANCE CHRONOGRAPH 41 AMG</b>
+                            <input type="button" value="favorite_border" class="material-icons-outlined toggleWish">
+                        </span>
+                        <small>Titanium case, Automatic, 41.0 mm</small>
+                    </div>
+                    <span>
+                        <mark>$ 9,800</mark>
+                        4 Variations
+                    </span>
+                </div>
+            </li>
+            <li>
+                <a href="productDetail062.html">
+                    <img src="images/productThumbnail_062.png" alt="product image">
+                </a>
+                <div>
+                    <div>
+                        <span>
+                            <b>PILOT’S WATCH TIMEZONER TOP GUN WOODLAND</b>
+                            <input type="button" value="favorite_border" class="material-icons-outlined toggleWish">
+                        </span>
+                        <small>Ceramic case, Automatic, 46.0 mm</small>
+                    </div>
+                    <span>
+                        <mark>$ 17,400</mark>
+                        3 Variation
+                    </span>
+                </div>
+            </li>
+            <li>
+                <a href="productDetail065.html">
+                    <img src="images/productThumbnail_065.png" alt="product image">
+                </a>
+                <div>
+                    <div>
+                        <span>
+                            <b>PILOT'S WATCH CHRONOGRAPH 41 TOP GUN</b>
+                            <input type="button" value="favorite_border" class="material-icons-outlined toggleWish">
+                        </span>
+                        <small>Ceramic case, Automatic, 41.9 mm</small>
+                    </div>
+                    <span>
+                        <mark>$ 8,750</mark>
+                        3 Variations
+                    </span>
+                </div>
+            </li>
+        </ul>
+        <input type="button" value="VIEW MORE" class="btnMore active">
+    </div>
+    <a href="#" class="btnTop">
+        <span class="material-icons-outlined">
+            arrow_upward
+        </span>
+    </a>
+    <footer>
+        <div>
+            <div>
+                <h2 class="unfold">CUSTOMER CARE</h2>
+                <ul>
+                    <li><a href="conditionOfSale.html">Condition of Sale</a></li>
+                    <li><a href="warranty_international.html">Warranty</a></li>
+                    <li><a href="registerTimepiece.html">Register Timepiece</a></li>
+                    <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+                    <li><a href="faq_service.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="unfold">PRIVACY&TERMS</h2>
+                <ul>
+                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                    <li><a href="termsOfUse.html">Terms of Use</a></li>
+                    <li><a href="accessibility.html">Accessibility</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="unfold">MADE AT IWC</h2>
+                <ul>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="sustainability.html">Sustainability</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+                <div>
+                    <input type="email" placeholder="Email Address (Required)">
+                    <input type="button" value="east" class="material-icons-outlined">
+                </div>
+                <a href="contactUs.html" class="btn-square">CONTACT TO US</a>
+            </div>
+        </div>
+        <div>
+            <p>© International Watch Company. 2024</p>
+            <ul>
+                <li><a href="https://www.facebook.com/IWCWatches">facebook</a></li>
+                <li><a href="http://www.instagram.com/iwcwatches">instagram</a></li>
+                <li><a href="http://www.x.com/iwc">x</a></li>
+                <li><a href="http://www.youtube.com/iwcwatches">youtube</a></li>
+                <li><a href="https://www.pinterest.com/iwcwatches/">pinterest</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

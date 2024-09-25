@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iwc</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC536FsQVUXluhSncqRjlAuxc0ImlwmLes&loading=async&language=en&region=US&callback=initMap"></script>
+    <script src="js/iwc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+
+<body>
+    <div class="popup search">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>TYPE IN THE KEY WORDS</h2>
+            <div>
+                <input type="search" placeholder="Please Enter Your Search Term">
+                <input type="submit" value="SEARCH">
+                <ul>
+                    <li><b>MOST COMMONLY SEARCHED</b></li>
+                    <li>CHRONOGRAPH</li>
+                    <li>TOP GUN</li>
+                    <li>AUTOMATIC</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="popup perm_identity">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>SIGN INTO IWC</h2>
+            <p>Please sign in here by entering your email address and your password</p>
+            <form action="index_after.html">
+                <ul>
+                    <li>
+                        <label for="userEmail">Email (Required)</label>
+                        <input type="email" id="userEmail" placeholder="Enter Your Email" required>
+                        <p>
+                            <span class="material-icons-outlined">info </span>
+                            Email Validation
+                        </p>
+                    </li>
+                    <li>
+                        <label for="userPW">Password (Required)</label>
+                        <input type="password" id="userPW" placeholder="Enter Your PassWord" required>
+                        <span class="material-icons-outlined toggleVisible">visibility_off</span>
+                    </li>
+                </ul>
+                <input type="submit" value="LOG IN">
+            </form>
+            <a href="forgotPassword.html">Forgot your password?</a>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <h2>CREATE NEW ACCOUNT</h2>
+                    <p>
+                        Register online now to personalize your account,
+                        <span>receive updates or catalogues, manage your
+                            orders and wish lists.</span>
+                    </p>
+                </div>
+                <a href="signUp.html">REGISTER</a>
+            </div>
+        </div>
+    </div>
+    <div class="popup favorite_border">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>WISHLIST</h2>
+            <span class="remainItem">3 ITEMS SAVED</span>
+            <ul>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_048.png" alt="product image">
+                    <div>
+                        <b>BIG PILOT'S WATCH AMG G 63</b>
+                        <small>18 ct Armor Gold® case, Automatic, 46.2 mm</small>
+                        <mark>$ 8,500</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_042.png" alt="product image">
+                    <div>
+                        <b>PILOT'S WATCH MARK XX</b>
+                        <small>Stainless steel case, Automatic, 40.0 mm</small>
+                        <mark>$ 6,150</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_067.png" alt="product image">
+                    <div>
+                        <b>PILOT'S WATCH CHRONOGRAPH 41 TOP GUN OCEANA</b>
+                        <small>Ceramic case, Automatic, 41.9 mm</small>
+                        <mark>$ 11,700</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="popup shopping_bag">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>SHOPPING BAG</h2>
+            <p>Free delivery and return : Ships in 3-5 business days</p>
+            <div>
+                <ul>
+                    <li>
+                        <input type="button" value="remove" class="material-icons-outlined">
+                        <img src="images/productThumbnail_048.png" alt="product image">
+                        <span>IW501201</span>
+                        <b>BIG PILOT'S WATCH AMG G 63</b>
+                        <small>18 ct Armor Gold® case, Automatic, 46.2 mm</small>
+                        <mark>$ 8,500</mark>
+                    </li>
+                    <li>
+                        <input type="button" value="remove" class="material-icons-outlined">
+                        <img src="images/productThumbnail_042.png" alt="product image">
+                        <span>IW328206</span>
+                        <b>PILOT'S WATCH MARK XX</b>
+                        <small>Stainless steel case, Automatic, 40.0 mm</small>
+                        <mark>$ 6,150</mark>
+                    </li>
+                </ul>
+                <div>
+                    <span>
+                        SUBTOTAL
+                        <mark>$ 14,650</mark>
+                    </span>
+                    <span>
+                        DELIVERY
+                        <mark>FREE</mark>
+                    </span>
+                    <span>
+                        TAXES
+                        <mark>To be calculated</mark>
+                    </span>
+                    <span>
+                        TOTAL
+                        <mark>$ 14,650</mark>
+                    </span>
+                    <p>Pay your order by Wire Transfer (only available with phone sales service) or the following online
+                        secured payment methods</p>
+                    <ul>
+                        <li><img src="images/paymentmethod__master.png" alt="master"></li>
+                        <li><img src="images/paymentmethod__union.png" alt="union pay"></li>
+                        <li><img src="images/paymentmethod__visa.png" alt="visa"></li>
+                        <li><img src="images/paymentmethod__amex.png" alt="american express"></li>
+                        <li><img src="images/paymentmethod__apple.png" alt="apple pay"></li>
+                        <li><img src="images/paymentmethod__wecp.png" alt="we chat pay"></li>
+                        <li><img src="images/paymentmethod__ppal.png" alt="paypal"></li>
+                        <li><img src="images/paymentmethod__gpay.png" alt="google pay"></li>
+                        <li><img src="images/paymentmethod__alix.png" alt="ali express pay"></li>
+                    </ul>
+                    <a href="checkout.html">CHECKOUT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup menu">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2><a href="/"><img src="images/logo.svg" alt="logo"></a></h2>
+        </div>
+        <ul>
+            <li><a href="watches.html">WATHCES</a></li>
+            <li><a href="sv_types.html">SERVICES</a></li>
+            <li><a href="findStore.html">STORES</a></li>
+            <li><a href="experience.html">EXPERIENCE</a></li>
+            <li><a href="journal.html">JOURNAL</a></li>
+        </ul>
+        <ol>
+            <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+            <li><a href="sv_extendWarranty.html">Extend Your Warranty</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ol>
+        <div>
+            <span>United States | English</span>
+            <a href="tel:+18004329330">1-800-432-9330</a>
+        </div>
+    </div>
+    <!-- popup -->
+
+    <header class="blackTheme">
+        <div>
+            <div>
+                <span>1-800-432-9330</span>
+                <span>United States | English</span>
+            </div>
+            <ul>
+                <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+                <li><a href="sv_extendWarranty.html">Extend Your Warranty</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <input type="button" value="menu" class="material-icons-outlined mui">
+            <h1><a href="/"><img src="images/logo_wh.svg" alt="iwc"></a></h1>
+            <nav>
+                <input type="button" value="close" class="material-icons-outlined">
+                <ul>
+                    <li><a href="watches.html">WATCHES</a></li>
+                    <li><a href="sv_careAdvice.html">SERVICES</a></li>
+                    <li><a href="findStore.html">STORES</a></li>
+                    <li><a href="experience.html">EXPERIENCE</a></li>
+                    <li><a href="journal.html">JOURNAL</a></li>
+                </ul>
+            </nav>
+            <ul>
+                <li>
+                    <input type="button" value="search" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="perm_identity" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="favorite_border" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="shopping_bag" class="material-icons-outlined utility">
+                </li>
+            </ul>
+        </div>
+        <div class="mui">
+            <div>
+                <input type="button" value="menu" class="material-icons-outlined">
+                <h1><a href="/"><img src="images/logo_wh.svg" alt="iwc"></a></h1>
+                <ul>
+                    <li>
+                        <input type="button" value="search" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="perm_identity" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="favorite_border" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="shopping_bag" class="material-icons-outlined utility">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="findStoreContainer">
+        <aside>
+            <h2>FIND A STORE</h2>
+            <P>All IWC SCHAFFHAUSEN Boutique</P>
+            <select>
+                <option value="default">Select a State</option>
+                <option value="ARIZONA">ARIZONA</option>
+                <option value="CALIFORNIA">CALIFORNIA</option>
+                <option value="FLORIDA">FLORIDA</option>
+                <option value="ILLINOIS">ILLINOIS</option>
+                <option value="NEVADA">NEVADA</option>
+                <option value="NEW JERSEY">NEW JERSEY</option>
+                <option value="NEW YORK">NEW YORK</option>
+                <option value="PENNSYLVANIA">PENNSYLVANIA</option>
+                <option value="TENNESSEE">TENNESSEE</option>
+                <option value="TEXAS">TEXAS</option>
+                <option value="VIRGINIA">VIRGINIA</option>
+            </select>
+            <span>18 results in All</span>
+            <ol>
+                <li class="active selected">
+                    <address>
+                        <strong>IWC SCHAFFHAUSEN BOUTIQUE - SCOTTSDALE</strong>
+                        7014 E Camelback Rd Suite 1117 Scottsdale, Arizona 85251
+                    </address>
+                    <a href="tel:+16024299209">+1-602-429-9209</a>
+                </li>
+                <li class="active" data-optNumb="2">
+                    <address>
+                        <strong>IWC SCHAFFHAUSEN FLAGSHIP BOUTIQUE - BEVERLY HILLS</strong>
+                        329 North Rodeo Drive Beverly Hills, California 90210
+                    </address>
+                    <a href="tel:+131107340520">+1-310-734-0520</a>
+                </li>
+                <li class="active">
+                    <address>
+                        <strong>IWC SCHAFFHAUSEN BOUTIQUE - COSTA MESA</strong>
+                        3333 Bristol Street Suite #2881 Costa Mesa, California 92626
+                    </address>
+                    <a href="tel:+17149554037">+1-714-955-4037</a>
+                </li>
+                <li class="active">
+                    <address>
+                        <strong>IWC SCHAFFHAUSEN BOUTIQUE - LA JOLLA</strong>
+                        1139 Prospect Street La Jolla, California 92037
+                    </address>
+                    <a href="tel:+16192021964">+1-619-202-1964</a>
+                </li>
+                <li class="active">
+                    <address>
+                        <strong>IWC SCHAFFHAUSEN BOUTIQUE - SAN FRANCISCO</strong>
+                        Westfield Center, 845 Market Street #129 San Francisco, California 94103
+                    </address>
+                    <a href="tel:+13107340520">+1-310-734-0520</a>
+                </li>
+                <li class="active">
+                    <address>
+                        <strong>IWC SCHAFFHAUSEN BOUTIQUE - SAN JOSE</strong>
+                        2855 Stevens Creek Blvd. Suite 1689 Santa Clara, California 95050
+                    </address>
+                    <a href="tel:+13803801888">+1-380-380-1888</a>
+                </li>
+                <li class="active">
+                    <address>
+                        <strong>IWC SCHAFFHAUSEN BOUTIQUE - MIAMI</strong>
+                        140 NE 39th Street Suite 125 Miami, Florida 33137
+                    </address>
+                    <a href="tel:+13055077488">+1-305-507-7488</a>
+                </li>
+                <li class="active">
+                    <address>
+                        <strong>IWC SCHAFFHAUSEN BOUTIQUE – PALM BEACH</strong>
+                        219 Worth Avenue Palm Beach, Florida 33480
+                    </address>
+                    <a href="tel:+15616702920">+1-561-670-2920</a>
+                </li>
+                <li class="active">
+                    <address>
+                        <strong>IWC SCHAFFHAUSEN BOUTIQUE - CHICAGO</strong>
+                        120 East Oak Street Chicago, Illinois 60611
+                    </address>
+                    <a href="tel:+13127615823">+1-312-761-5823</a>
+                </li>
+                <li class="active">
+                    <address>
+                        <strong>IWC SCHAFFHAUSEN BOUTIQUE - THE PALAZZO RESORT, LAS VEGAS</strong>
+                        3325 Las Vegas Boulevard South Suite 1702, Las Vegas, Nevada 89109
+                    </address>
+                    <a href="tel:+17026500817">+1-702-650-0817</a>
+                </li>
+                <li class="active">
+                    <address>
+                        <strong>IWC SCHAFFHAUSEN BOUTIQUE - THE FORUM SHOPS AT CAESARS, LAS VEGAS</strong>
+                        3500 Las Vegas Blvd S Suite EA014 Las Vegas, Nevada 89109
+                    </address>
+                    <a href="tel:+17022668873">+1-702-266-8873</a>
+                </li>
+                <li class="active">
+                    <address>
+                        <strong>IWC SCHAFFHAUSEN BOUTIQUE - SHORT HILLS</strong>
+                        1200 MORRIS Tpke SUITE A-114 Short Hills, New Jersey 07078
+                    </address>
+                    <a href="tel:+19733151069">+1-973-315-1069</a>
+                </li>
+                <li class="active">
+                    <address>
+                        <strong>IWC SCHAFFHAUSEN BOUTIQUE - HUDSON YARDS</strong>
+                        500 W 33rd ST RU132 New York, New York 10001
+                    </address>
+                    <a href="tel:+121238960969">+1-212-389-6096</a>
+                </li>
+                <li class="active">
+                    <address>
+                        <strong>IWC SCHAFFHAUSEN FLAGSHIP BOUTIQUE - NEW YORK</strong>
+                        535 Madison Avenue E 54th Street New York, New York 10022
+                    </address>
+                    <a href="tel:+12123557271">+1-212-355-7271</a>
+                </li>
+                <li class="active">
+                    <address>
+                        <strong>IWC SCHAFFHAUSEN BOUTIQUE - KING OF PRUSSIA</strong>
+                        160 N Gulph Road Space 1084A King Of Prussia, Pennsylvania 19406
+                    </address>
+                    <a href="tel:+16104918801">+1-610-491-8801</a>
+                </li>
+                <li class="active">
+                    <address>
+                        <strong>IWC SCHAFFHAUSEN BOUTIQUE – NASHVILLE</strong>
+                        2126 Abbott Martin RoadThe Mall at Green HillsNashville
+                    </address>
+                    <a href="tel:+16104918801">+1-610-491-8801</a>
+                </li>
+                <li class="active">
+                    <address>
+                        <strong>IWC SCHAFFHAUSEN BOUTIQUE - HOUSTON</strong>
+                        1801 Post Oak Blvd suite 100 Houston, Texas 77056
+                    </address>
+                    <a href="tel:+12814029817">+1-281-402-9817</a>
+                </li>
+                <li class="active">
+                    <address>
+                        <strong>IWC SCHAFFHAUSEN BOUTIQUE - TYSONS GALLERIA</strong>
+                        2001 International Drive Suite 2602 McLean, Virginia 22102
+                    </address>
+                    <a href="tel:+15716233583">+1-571-623-3583</a>
+                </li>
+            </ol>
+        </aside>
+        <div id="map">
+            <gmp-map center="33.502219,-111.932186" zoom="17" map-id="DEMO_MAP_ID"">
+                <gmp-advanced-marker position="33.503693,-111.930643" title="Mountain View, CA"></gmp-map>
+        </div>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC536FsQVUXluhSncqRjlAuxc0ImlwmLes&language=en&region=US&callback=initMap&libraries=marker&v=beta"
+            defer></script>
+    </div>
+
+    <a href="#" class="btnTop">
+        <span class="material-icons-outlined">
+            arrow_upward
+        </span>
+    </a>
+    <footer>
+        <div>
+            <div>
+                <h2 class="unfold">CUSTOMER CARE</h2>
+                <ul>
+                    <li><a href="conditionOfSale.html">Condition of Sale</a></li>
+                    <li><a href="warranty_international.html">Warranty</a></li>
+                    <li><a href="registerTimepiece.html">Register Timepiece</a></li>
+                    <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+                    <li><a href="faq_service.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="unfold">PRIVACY&TERMS</h2>
+                <ul>
+                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                    <li><a href="termsOfUse.html">Terms of Use</a></li>
+                    <li><a href="accessibility.html">Accessibility</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="unfold">MADE AT IWC</h2>
+                <ul>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="sustainability.html">Sustainability</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+                <div>
+                    <input type="email" placeholder="Email Address (Required)">
+                    <input type="button" value="east" class="material-icons-outlined">
+                </div>
+                <a href="contactUs.html" class="btn-square">CONTACT TO US</a>
+            </div>
+        </div>
+        <div>
+            <p>© International Watch Company. 2024</p>
+            <ul>
+                <li><a href="https://www.facebook.com/IWCWatches">facebook</a></li>
+                <li><a href="http://www.instagram.com/iwcwatches">instagram</a></li>
+                <li><a href="http://www.x.com/iwc">x</a></li>
+                <li><a href="http://www.youtube.com/iwcwatches">youtube</a></li>
+                <li><a href="https://www.pinterest.com/iwcwatches/">pinterest</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    </script>
+</body>
+
+</html>

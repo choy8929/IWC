@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iwc</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/iwc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+
+<body>
+    <div class="popup search">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>TYPE IN THE KEY WORDS</h2>
+            <div>
+                <input type="search" placeholder="Please Enter Your Search Term">
+                <input type="submit" value="SEARCH">
+                <ul>
+                    <li><b>MOST COMMONLY SEARCHED</b></li>
+                    <li>CHRONOGRAPH</li>
+                    <li>TOP GUN</li>
+                    <li>AUTOMATIC</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="popup perm_identity">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>SIGN INTO IWC</h2>
+            <p>Please sign in here by entering your email address and your password</p>
+            <form action="index_after.html">
+                <ul>
+                    <li>
+                        <label for="userEmail">Email (Required)</label>
+                        <input type="email" id="userEmail" placeholder="Enter Your Email" required>
+                        <p>
+                            <span class="material-icons-outlined">info </span>
+                            Email Validation
+                        </p>
+                    </li>
+                    <li>
+                        <label for="userPW">Password (Required)</label>
+                        <input type="password" id="userPW" placeholder="Enter Your PassWord" required>
+                        <span class="material-icons-outlined toggleVisible">visibility_off</span>
+                    </li>
+                </ul>
+                <input type="submit" value="LOG IN">
+            </form>
+            <a href="forgotPassword.html">Forgot your password?</a>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <h2>CREATE NEW ACCOUNT</h2>
+                    <p>
+                        Register online now to personalize your account,
+                        <span>receive updates or catalogues, manage your
+                            orders and wish lists.</span>
+                    </p>
+                </div>
+                <a href="signUp.html">REGISTER</a>
+            </div>
+        </div>
+    </div>
+    <div class="popup favorite_border">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>WISHLIST</h2>
+            <span>3 ITEMS SAVED</span>
+            <ul>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_048.png" alt="product image">
+                    <div>
+                        <b>BIG PILOT'S WATCH AMG G 63</b>
+                        <small>18 ct Armor Gold® case, Automatic, 46.2 mm</small>
+                        <mark>$ 8,500</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_042.png" alt="product image">
+                    <div>
+                        <b>PILOT'S WATCH MARK XX</b>
+                        <small>Stainless steel case, Automatic, 40.0 mm</small>
+                        <mark>$ 6,150</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_067.png" alt="product image">
+                    <div>
+                        <b>PILOT'S WATCH CHRONOGRAPH 41 TOP GUN OCEANA</b>
+                        <small>Ceramic case, Automatic, 41.9 mm</small>
+                        <mark>$ 11,700</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="popup shopping_bag">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>SHOPPING BAG</h2>
+            <p>Free delivery and return : Ships in 3-5 business days</p>
+            <div>
+                <ul>
+                    <li>
+                        <input type="button" value="remove" class="material-icons-outlined">
+                        <img src="images/productThumbnail_048.png" alt="product image">
+                        <span>IW501201</span>
+                        <b>BIG PILOT'S WATCH AMG G 63</b>
+                        <small>18 ct Armor Gold® case, Automatic, 46.2 mm</small>
+                        <mark>$ 8,500</mark>
+                    </li>
+                    <li>
+                        <input type="button" value="remove" class="material-icons-outlined">
+                        <img src="images/productThumbnail_042.png" alt="product image">
+                        <span>IW328206</span>
+                        <b>PILOT'S WATCH MARK XX</b>
+                        <small>Stainless steel case, Automatic, 40.0 mm</small>
+                        <mark>$ 6,150</mark>
+                    </li>
+                </ul>
+                <div>
+                    <span>
+                        SUBTOTAL
+                        <mark>$ 14,650</mark>
+                    </span>
+                    <span>
+                        DELIVERY
+                        <mark>FREE</mark>
+                    </span>
+                    <span>
+                        TAXES
+                        <mark>To be calculated</mark>
+                    </span>
+                    <span>
+                        TOTAL
+                        <mark>$ 14,650</mark>
+                    </span>
+                    <p>Pay your order by Wire Transfer (only available with phone sales service) or the following online
+                        secured payment methods</p>
+                    <ul>
+                        <li><img src="images/paymentmethod__master.png" alt="master"></li>
+                        <li><img src="images/paymentmethod__union.png" alt="union pay"></li>
+                        <li><img src="images/paymentmethod__visa.png" alt="visa"></li>
+                        <li><img src="images/paymentmethod__amex.png" alt="american express"></li>
+                        <li><img src="images/paymentmethod__apple.png" alt="apple pay"></li>
+                        <li><img src="images/paymentmethod__wecp.png" alt="we chat pay"></li>
+                        <li><img src="images/paymentmethod__ppal.png" alt="paypal"></li>
+                        <li><img src="images/paymentmethod__gpay.png" alt="google pay"></li>
+                        <li><img src="images/paymentmethod__alix.png" alt="ali express pay"></li>
+                    </ul>
+                    <a href="checkout.html">CHECKOUT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup menu">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2><a href="/"><img src="images/logo.svg" alt="logo"></a></h2>
+        </div>
+        <ul>
+            <li><a href="watches.html">WATHCES</a></li>
+            <li><a href="sv_types.html">SERVICES</a></li>
+            <li><a href="findStore.html">STORES</a></li>
+            <li><a href="experience.html">EXPERIENCE</a></li>
+            <li><a href="journal.html">JOURNAL</a></li>
+        </ul>
+        <ol>
+            <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+            <li><a href="sv_extendWarranty.html">Extend Your Warranty</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ol>
+        <div>
+            <span>United States | English</span>
+            <a href="tel:+18004329330">1-800-432-9330</a>
+        </div>
+    </div>
+    <!-- popup -->
+
+    <header class="blackTheme">
+        <div>
+            <div>
+                <span>1-800-432-9330</span>
+                <span>United States | English</span>
+            </div>
+            <ul>
+                <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+                <li><a href="sv_extendWarranty.html">Extend Your Warranty</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <input type="button" value="menu" class="material-icons-outlined mui">
+            <h1><a href="/"><img src="images/logo_wh.svg" alt="iwc"></a></h1>
+            <nav>
+                <input type="button" value="close" class="material-icons-outlined">
+                <ul>
+                    <li><a href="watches.html">WATCHES</a></li>
+                    <li><a href="sv_careAdvice.html">SERVICES</a></li>
+                    <li><a href="findStore.html">STORES</a></li>
+                    <li><a href="experience.html">EXPERIENCE</a></li>
+                    <li><a href="journal.html">JOURNAL</a></li>
+                </ul>
+            </nav>
+            <ul>
+                <li>
+                    <input type="button" value="search" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="perm_identity" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="favorite_border" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="shopping_bag" class="material-icons-outlined utility">
+                </li>
+            </ul>
+        </div>
+        <div class="mui">
+            <div>
+                <input type="button" value="menu" class="material-icons-outlined">
+                <h1><a href="/"><img src="images/logo_wh.svg" alt="iwc"></a></h1>
+                <ul>
+                    <li>
+                        <input type="button" value="search" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="perm_identity" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="favorite_border" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="shopping_bag" class="material-icons-outlined utility">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="privacyPolicyContainer">
+        <div>
+            <small>PRIVACY&TERMS</small>
+            <h2>PRIVACY POLICY</h2>
+            <p>LAST UPDATED: JULY 2023</p>
+        </div>
+        <div>
+            <ol>
+                <li class="active">
+                    <h3>1. ABOUT IWC AND THIS PRIVACY POLICY<span>expand</span></h3>
+                    <div>
+                        <div>Your watch has been made according to the strict quality standards of IWC and with all the
+                            care of highly qualified watchmakers. The watch is covered by this International Limited
+                            Warranty against defects in manufacturing and materials. Please contact one of the
+                            authorized IWC boutiques, IWC retailers or IWC service centres located around the world
+                            (service contacts can be found at <a href="findStore.html">www.iwc.com/stores</a>) and they
+                            will be able to provide warranty service as defined herein.</div>
+                    </div>
+                </li>
+                <li>
+                    <h3>2. UPDATES TO THIS PRIVACY POLICY<span>expand</span></h3>
+                    <div>
+                        <p>From time to time we may update this Privacy Policy. When we do, we will publish the changes
+                            on this Platform.</p>
+                    </div>
+                </li>
+                <li>
+                    <h3>3. INFORMATION YOU PROVIDE TO US AND HOW WE USE IT<span>expand</span></h3>
+                    <div>
+                        <p>We collect the information from you as detailed below:</p>
+                        <ul>
+                            <li>To access certain areas of our Platform, you will need to register with us. During the
+                                registration process you will be asked to submit personal information about yourself
+                                (including your name and address, date of birth, e-mail address and telephone number).
+                                By entering your details in the fields requested, you enable IWC to provide you with the
+                                services you select;</li>
+                            <li>When you purchase products online or by phone, we collect information such as your
+                                purchase details and relevant payment information. In addition, we will also collect
+                                personal information from you when you correspond with us (for example, if you contact
+                                us with a query about one of our products or services), when you provide your details
+                                when you visit a IWC boutique or contact the IWC concierge by telephone. Please note
+                                that phone calls will on occasion be recorded for security, training and development
+                                purposes;</li>
+                            <li>If you choose to interact with IWC via a social media platform or other third party
+                                service, we will collect the information you have provided to us through that platform;
+                            </li>
+                            <li>We also collect certain information automatically about visitors to our Platform,
+                                described in the section headed "Cookies and other information that we automatically
+                                collect", below; and</li>
+                            <li>We will collect information about your location to the extent that we provide any
+                                location services, described in the section headed “Location services” below.</li>
+                        </ul>
+                        <p>We will use the information we collect from you to:</p>
+                        <ul>
+                            <li>Manage and fulfil purchase and repair orders, facilitate delivery, and to provide
+                                after-sales services;</li>
+                            <li>Manage our accounts and records;</li>
+                            <li>Deal with your enquiries and requests;</li>
+                            <li>Send service related communications, including announcements and administrative messages
+                                such as order confirmation;</li>
+                            <li>Identify products and services we think you might be interested in based on your
+                                information, such as your purchase history and your previous interactions with us; </li>
+                            <li>Send you marketing communications (including e-mails and social media audience matching)
+                                relating to us and other third party partners and that we think may be of interest to
+                                you where we have a legitimate basis to do so (please see the “Your choices” section
+                                below for further information about how you can control these updates);</li>
+                            <li>Conduct market research so that we can continuously improve the services we provide to
+                                our customers;</li>
+                            <li>Undertake credit checking, prevention of fraud and other prohibited or illegal
+                                activities as part of our efforts to keep our Platform and services secure; and</li>
+                            <li>Understand how our Platform is used so that we can continuously improve our Platform and
+                                services and other offerings. </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <h3>4. COOKIES AND OTHER INFORMATION THAT WE AUTOMATICALLY COLLECT<span>expand</span></h3>
+                    <div>
+                        <p>Like most platforms, IWC logs IP addresses and uses cookies and similar technologies that
+                            allow us to recognise you and to customise your experience, and provide us with information
+                            about the way our visitors access our Platform. You can find out more about how we use
+                            cookies and related technologies below.</p>
+                        <h4>WHAT IS A COOKIE?</h4>
+                        <p>Cookies are text files, containing small amounts of information, which are downloaded to your
+                            computer or mobile device when you visit a website or mobile application. They are used to
+                            recognise your computer as you move between pages on a website, or when you return to a
+                            website or mobile application you have visited previously. Cookies are widely used in order
+                            to make platforms work, or to work more efficiently, as well as to provide information to
+                            the owners of the platform.</p>
+                        <p>We use cookies to enhance the online experience of our visitors (for example, by remembering
+                            your language and/or product preferences) and to better understand how our Platform is used.
+                            Cookies will tell us, for example, whether you have visited our Platform before or whether
+                            you are a new visitor. They can also help to ensure that adverts you see online are more
+                            relevant to you and your interests.</p>
+                        <p>There are two broad categories of cookies:</p>
+                        <ul>
+                            <li>
+                                <b>First party cookies</b>, served directly by IWC to your computer or mobile device.
+                                They are used only by IWC to recognise your computer or mobile device when it revisits
+                                our Platform.
+                            </li>
+                            <li>
+                                <b>Third party cookies</b>, which are served by a third party service provider on our
+                                Platform, and can be used by the service provider to recognise your computer or mobile
+                                device when it visits other platforms. Third party cookies are most commonly used for
+                                platform analytics or advertising purposes.
+                            </li>
+                        </ul>
+                        <p>Cookies can remain on your computer or mobile device for different periods of time. IWC uses
+                            both 'session cookies' and ‘permanent cookies’. Session cookies exist only while your
+                            browser is open and are deleted automatically once you close your browser. Permanent cookies
+                            survive after your browser is closed, and can be used to recognise your computer or mobile
+                            device when you open your browser and browse the internet again.</p>
+                        <h4>WHAT COOKIES DOES IWC USE?</h4>
+                        <p>The Platform serves only the following types of cookies to yocur computer or mobile device:
+                        </p>
+                        <ul>
+                            <li>
+                                <b>Technical Cookies</b>: These cookies are essential to provide you with
+                                services available through this Platform and to use some of its features, such
+                                as access to secure areas. Without these cookies, services you have asked for,
+                                like transactional pages and secure login accounts, would not be possible.
+                            </li>
+                            <li>
+                                <b>Functionality Cookies</b>: These cookies serve a variety of purposes related
+                                to the presentation, performance and functionality of this Platform. Their
+                                overall purpose, however, is to enhance visitors’ experience and enjoyment of
+                                this Platform. For example, some of these cookies enable visitors to specify
+                                language, product or other platform preferences.
+                            </li>
+                            <li>
+                                <b>Analytical Cookies</b>: These cookies, including those from third parties,
+                                are used to collect information about how visitors use our Platform. The
+                                information gathered does not identify any individual visitor and is aggregated.
+                                It includes the number of visitors to our Platform, the platforms that referred
+                                them to our Platform and the pages that they visited on our Platform. We use
+                                this information to help run our Platform more efficiently, to gather broad
+                                demographic information and to monitor the level of activity on our Platform.
+                            </li>
+                            <li>
+                                <b>Advertising Cookies</b>: These cookies, including those from third parties,
+                                are aimed at creating profiles related to you and are used to deliver adverts
+                                more relevant to you and your interests in line with your preferences expressed
+                                while surfing the web. They are also used to limit the number of times you see
+                                an advertisement as well as help to evaluate the effectiveness of advertising
+                                and promotion. They are usually placed by advertising networks with our
+                                permission. They remember that you have visited a platform and this information
+                                is shared with other organisations such as advertisers.
+                            </li>
+                            <li>
+                                <b>Social Cookies</b>: These cookies are third party cookies (e.g. Facebook)
+                                that allow you to interact with social media platforms. The companies that serve
+                                these cookies may also use your information to serve targeted advertising on
+                                other platforms.
+                            </li>
+                        </ul>
+                        <h4>HOW TO CONTROL OR DELETE COOKIES</h4>
+                        <p>We use non-essential cookies on the basis of your consent. You have the right to withdraw
+                            that consent and refuse the use of cookies at any time and we have explained how you can
+                            exercise this right below. However, please note that if you choose to refuse cookies you may
+                            not be able to use the full functionality of our Platform.</p>
+                        <p>You can set your cookie preferences by changing your browser settings so that cookies from
+                            this Platform cannot be placed on your computer or mobile device. In order to do this,
+                            follow the instructions provided by your browser (usually located within the “Help”, “Tools”
+                            or “Edit” facility).</p>
+                        <div>If you would like to learn more, please visit <a
+                                href="https://optout.aboutads.info/">http://www.aboutads.info/choices/</a>. More detail
+                            on how businesses use cookies is available at <a
+                                href="https://allaboutcookies.org/">www.allaboutcookies.org</a>. We are not responsible
+                            for effectiveness of or compliance with any third parties’ opt-out options.</div>
+                        <h4>IP ADDRESSES</h4>
+                        <p>We will collect information about your computer or mobile device, including where available
+                            your IP address, operating system, log-in times and browser type. We use this information to
+                            better understand how visitors use our Platform and for internal reporting purposes. We will
+                            anonymise and share this information with advertisers, sponsors or other businesses.</p>
+                    </div>
+                </li>
+                <li>
+                    <h3>5. ABOUT ADVERTISING<span>expand</span></h3>
+                    <div>
+                        <p>The Platforms use third parties such as network advertisers and ad exchanges to serve you ads
+                            on third party platforms after you leave our Platforms, and we use third party analytics and
+                            other service providers to evaluate and provide us and/or third parties with information
+                            about the use of the Platforms and viewing of ads and of our content. Network advertisers
+                            are third parties that display advertisements, which are based on your visits to the
+                            Platforms and other apps and sites you have visited. Third party ad serving enables us to
+                            target advertisements to you for products and services that you might be interested in.</p>
+                        <p>Third party tracking technologies are not controlled by us, even if they are associated with
+                            our Platforms or our ads. Statements regarding our practices do not apply to the methods for
+                            collecting information used by these third parties and others or the use of the information
+                            that such third parties collect. The relevant third party’s terms of service, privacy
+                            policy, permissions, notices and choices should be reviewed regarding their collection,
+                            storage and sharing practices. We make no representations regarding the policies or
+                            practices of third party advertisers or advertising networks or exchanges or related third
+                            parties.</p>
+                        <p>You have choices in respect of the delivery of ads. You can opt-out of receiving certain
+                            types of behavioural ads by visiting the third party websites described in the section
+                            headed “How to control or delete cookies” above. We are not responsible for effectiveness of
+                            or compliance with any third parties’ opt-out options.</p>
+                    </div>
+                </li>
+                <li>
+                    <h3>6. LOCATION SERVICES<span>expand</span></h3>
+                    <div>
+                        <p>Some of the services that we provide are able to use information about your location. For
+                            these services, which are typically available on mobile devices or applications, you are
+                            provided with the opportunity to provide your consent to the use of location services,
+                            which, for example, process information deriving from GPS, sensors, beacons or Wi-Fi access
+                            points in order to allow you to benefit from a more personalised service. Your device will
+                            have settings that allow you to turn off these services should you no longer wish to benefit
+                            from them.</p>
+                    </div>
+                </li>
+                <li>
+                    <h3>7. SHARING YOUR INFORMATION<span>expand</span></h3>
+                    <div>
+                        <p>We do not share personal information about you with other people or non-affiliated companies
+                            except under the following circumstances:</p>
+                        <ul>
+                            <li>we will disclose your personal information to third party providers for the purposes of
+                                providing online and other payment services, handling credit checks and fraud
+                                prevention, and any other services required in order for us to use your information for
+                                the purposes specified in the section entitled “Information you provide us and how we
+                                use it”;</li>
+                            <li>we will disclose your personal information to any law enforcement agency, court,
+                                regulator, government authority or other third party where we believe this is necessary
+                                to comply with a legal or regulatory obligation, or otherwise to protect our rights or
+                                the rights of any third party; and</li>
+                            <li>we will disclose your personal information to any third party that purchases, or to
+                                which we transfer, all or substantially all of our assets and business. Should such a
+                                sale or transfer occur, we will use reasonable efforts to try to ensure that the entity
+                                to which we transfer your personal information uses it in a manner that is consistent
+                                with this Privacy Policy.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <h3>8. INTERNATIONAL TRANSFERS<span>expand</span></h3>
+                    <div>
+                        <p>Information we collect may be transferred to, stored and processed in any country or
+                            territory where one or more of our affiliated group companies or third party service
+                            providers are located or maintain facilities. Some of these third parties will use
+                            cloud-based storage solutions. While other territories may not have the same standards of
+                            data protection as those within your home country, we will continue to protect the personal
+                            information we transfer in accordance with this Privacy Policy.</p>
+                    </div>
+                </li>
+                <li>
+                    <h3>9. PROTECTING YOUR INFORMATION<span>expand</span></h3>
+                    <div>
+                        <p>We want you to feel confident about using our Platform, and we are committed to protecting
+                            the personal information we collect. We limit access to personal information about you to
+                            employees who reasonably need access to it, to provide products or services to you or in
+                            order to do their jobs. We have appropriate technical and organisational physical,
+                            electronic, and procedural safeguards to protect the personal information that you provide
+                            to us against unauthorised or unlawful processing and against accidental loss, damage or
+                            destruction. However, where we ask you to choose a password in order to access certain parts
+                            of our Platform, you are responsible for selecting a secure password and keeping that
+                            password confidential. You should choose a password which you do not use on any other site,
+                            and you should not share it with anyone else.</p>
+                    </div>
+                </li>
+                <li>
+                    <h3>10. RETAINING YOUR INFORMATION<span>expand</span></h3>
+                    <div>
+                        <p>We keep your information for only as long as is necessary for our purposes, and in particular
+                            to protect ourselves in the event of a legal claim (for example, information relating to a
+                            contract with you will be kept for the lifetime of the contract and up to ten years after).
+                            After this period it will be deleted or in some cases anonymised. Where we sought your
+                            consent to process your personal information and we have no other lawful basis to continue
+                            with that processing, if you subsequently withdraw your consent we will delete your personal
+                            information.</p>
+                        <p>If you request that we no longer send you direct marketing communications, we will keep a
+                            record of your request and contact details to ensure that your request is respected.</p>
+                    </div>
+                </li>
+                <li>
+                    <h3>11. YOUR CHOICES<span>expand</span></h3>
+                    <div>
+                        <p>You have the right to ask for access to any personal information that we hold about you in
+                            our records, to correct any inaccuracies and to update any out-of-date information. In some
+                            circumstances, you have the right to request the erasure of your personal information or a
+                            restriction of its use.</p>
+                        <p>You have the right to object to us processing your personal information in some cases. In
+                            particular, you can ask us to stop sending you direct marketing communications at any time
+                            (however please note that we may continue to send you service-related (i.e. non-marketing)
+                            communications, such as e-mail updates on your order status). If you wish to exercise any of
+                            these rights, please write to us at the address listed below. </p>
+                        <p>You may unsubscribe from e-mail marketing communications at any time by e-mailing the address
+                            below in the section headed “Contact us” or clicking on the ‘unsubscribe’ link in any IWC
+                            marketing e-mails. </p>
+                    </div>
+                </li>
+                <li>
+                    <h3>12. CALIFORNIA PRIVACY RIGHTS<span>expand</span></h3>
+                    <div>
+                        <p>This section applies solely to the personal information collected online and offline of
+                            California consumers. This section is intended to address the relevant notice requirements
+                            of the California Consumer Privacy Act of 2018 as amended by the California Privacy Rights
+                            Act of 2020 (collectively, the “<b>CCPA</b>”), and uses certain terms that have the meaning
+                            given to them in the CCPA.</p>
+                        <ul>
+                            <li>
+                                <b>Your information, sources and purposes</b>: Please refer to the sections above headed
+                                “Information you provide to us and how we use it” and “Cookies and other information
+                                that we automatically collect” for a description of the personal information we may
+                                collect about you (or have collected in the preceding 12 months) and the sources of such
+                                information (such as directly from you and your device or through certain third
+                                parties). These sections also describe the purposes for which we may use or have used
+                                such information. We do not collect or process sensitive personal information for
+                                purposes of inferring characteristics about consumers. To the extent we process
+                                deidentified information, we will maintain and use the information in deidentified form
+                                and will not attempt to reidentify the information unless permitted by applicable law.
+                            </li>
+                            <li>
+                                <b>Retaining your information</b>: We will retain your personal information for the time
+                                period reasonably necessary to achieve the purposes described this Privacy Policy, or
+                                any other notice provided at the time of collection, taking into account applicable
+                                statutes of limitation and records retention requirements under applicable law.
+                            </li>
+                            <li>
+                                <b>Disclosing your information</b>: We may have disclosed your personal information to
+                                certain categories of third parties, as described in the section headed “Sharing your
+                                information” above.
+                            </li>
+                            <li>
+                                <b>Selling your information/sharing your information for cross-context behavioral
+                                    advertising</b>: We do not sell or share your personal information in exchange for
+                                monetary compensation. As described in the sections headed “Cookies and other
+                                information that we automatically collect” and “About Advertising”, we may allow certain
+                                third parties (such as certain advertising partners) to collect your personal
+                                information via automated technologies on our Platforms in an effort to serve you
+                                content and advertisements that may be of interest to you. We also may share your
+                                personal information, such as your email address, with third parties to help support our
+                                marketing activities. This kind of sharing may be considered a sale or sharing for
+                                cross-context behavioral advertising under the CCPA. You have the right to opt out of
+                                this disclosure of your information, as described below
+                            </li>
+                            <li>
+                                <b>Your rights</b>: Subject to exceptions under applicable law, you may have certain
+                                choices regarding our use and disclosure of your personal information, as described
+                                below:
+                                <ul>
+                                    <li>
+                                        <b>Access</b>: You have the right to request, twice in a 12-month period, that
+                                        we disclose to you the personal information we have collected about you,
+                                        including the categories of personal information, the categories of sources from
+                                        which the personal information is collected, the business or commercial purpose
+                                        for collecting, selling, or sharing personal information, the categories of
+                                        third parties to whom we disclose personal information, and the specific pieces
+                                        of personal information we have collected about you.
+                                    </li>
+                                    <li>
+                                        <b>Correction</b>: You have the right to request that we correct the personal
+                                        information we maintain about you, if that information is inaccurate.
+                                    </li>
+                                    <li>
+                                        <b>Deletion</b>: You have the right to request that we delete certain personal
+                                        information we have collected from you.
+                                    </li>
+                                    <li>
+                                        <b>Opt-Out of Sale or Sharing</b>: You have the right to opt out of the sale of
+                                        your personal information or sharing of your personal information for
+                                        cross-context behavioral advertising. You can opt-out of cookie-based
+                                        selling/sharing by clicking here or broadcasting the Global Privacy Control
+                                        signal. For more information about how to use the Global Privacy Control signal,
+                                        please see <a
+                                            href="https://globalprivacycontrol.org/">https://globalprivacycontrol.org/</a>.
+                                        In addition, you can opt out of other types of selling/sharing as further
+                                        described in the CCPA Opt-out Page. Your opt-out will be specific to the browser
+                                        and device you are using and will apply to the website domain on which you
+                                        submit the request. If you clear your cookies or use a new browser or device to
+                                        access the site, please submit a new request to re-apply your opt-out choice.
+                                        Note that even if you opt out of sale or sharing, you may still be served
+                                        advertisements and receive marketing emails from us and our service providers.
+                                    </li>
+                                </ul>
+                                <p>To exercise your rights on behalf of yourself or another individual, please contact
+                                    us as described in the section headed “Contact Us” below. If you exercise your
+                                    rights, we may require you to provide certain information to verify your identity
+                                    (such as your name, email address, phone number and/or address) or the authority of
+                                    any third person acting on your behalf.</p>
+                                <ul>
+                                    <li>
+                                        <b>No discrimination</b>: If you choose to exercise any of your rights under the
+                                        CCPA, you have the right to not receive discriminatory treatment by us. This
+                                        section is available in alternative formats upon request by contacting us as
+                                        described in the section headed “Contact Us” below.
+                                    </li>
+                                    <li>
+                                        <b>Personal, family and household clients</b>: In addition, under California
+                                        Civil Code Section 1798.83, if you are a California resident and your business
+                                        relationship with us is primarily for personal, family or household purposes,
+                                        you may request certain data regarding our disclosure, if any, of personal
+                                        information to third parties for the third parties’ direct marketing purposes.
+                                        To make such a request, please send an e-mail message to our e-mail address
+                                        below with “Request for California Privacy Information” in the subject line. You
+                                        may make such a request up to once per calendar year. If applicable, we will
+                                        provide you, by e-mail, a list of the categories of personal information
+                                        disclosed to third parties for their direct marketing purposes during the
+                                        immediately preceding calendar year, along with the third parties’ names and
+                                        addresses. Please note that not all personal information sharing is covered by
+                                        Section 1798.83’s requirements.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <h3>13. CHILDREN<span>expand</span></h3>
+                    <div>
+                        <p>The Platform is not directed at anyone who we know to be under the age of 13, nor do we
+                            collect any personal information from anyone who we know to be under the age of 13. If you
+                            are under the age of 13, you should not use the Platform and should not submit any personal
+                            information to us.</p>
+                    </div>
+                </li>
+                <li>
+                    <h3>14. FOR DELIVERY COUNTRIES OUTSIDE OF THE US, EU AND UK<span>expand</span></h3>
+                    <div>
+                        <p>We partnered with Global-e, a third-party service acting as your seller-on-record, so you can
+                            buy and ship your IWC Schaffhausen products worldwide. We are shipping globally to the
+                            following countries: Albania, Cyprus, Egypt, Estonia, India, Indonesia, Israel, Macau -
+                            China, Malaysia, New Zealand, Norway, Philippines, Qatar, Saudi Arabia, Serbia, Slovenia,
+                            Taiwan - China, Thailand, Turkey, Vietnam.</p>
+                        <div>When you buy your IWC Schaffhausen products from Global-e, you will see that your payment
+                            method is charged by *global-e/IWC Schaffhausen*, and the purchase is subject to Global-e’s
+                            Conditions of Sale IWC’s privacy policy (which will be clearly presented in checkout before
+                            you place the order) or accessible here: <a href="conditionsOfSale.html">Conditions of
+                                Sale</a> or <a href="privacyPolicy.html">Privacy Policy</a>.</div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <a href="#" class="btnTop">
+        <span class="material-icons-outlined">
+            arrow_upward
+        </span>
+    </a>
+    <footer>
+        <div>
+            <div>
+                <h2 class="unfold">CUSTOMER CARE</h2>
+                <ul>
+                    <li><a href="conditionOfSale.html">Condition of Sale</a></li>
+                    <li><a href="warranty_international.html">Warranty</a></li>
+                    <li><a href="registerTimepiece.html">Register Timepiece</a></li>
+                    <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+                    <li><a href="faq_service.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="unfold">PRIVACY&TERMS</h2>
+                <ul>
+                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                    <li><a href="termsOfUse.html">Terms of Use</a></li>
+                    <li><a href="accessibility.html">Accessibility</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="unfold">MADE AT IWC</h2>
+                <ul>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="sustainability.html">Sustainability</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+                <div>
+                    <input type="email" placeholder="Email Address (Required)">
+                    <input type="button" value="east" class="material-icons-outlined">
+                </div>
+                <a href="contactUs.html" class="btn-square">CONTACT TO US</a>
+            </div>
+        </div>
+        <div>
+            <p>© International Watch Company. 2024</p>
+            <ul>
+                <li><a href="https://www.facebook.com/IWCWatches">facebook</a></li>
+                <li><a href="http://www.instagram.com/iwcwatches">instagram</a></li>
+                <li><a href="http://www.x.com/iwc">x</a></li>
+                <li><a href="http://www.youtube.com/iwcwatches">youtube</a></li>
+                <li><a href="https://www.pinterest.com/iwcwatches/">pinterest</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

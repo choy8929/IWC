@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iwc</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/iwc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+
+<body>
+    <div class="popup search">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>TYPE IN THE KEY WORDS</h2>
+            <div>
+                <input type="search" placeholder="Please Enter Your Search Term">
+                <input type="submit" value="SEARCH">
+                <ul>
+                    <li><b>MOST COMMONLY SEARCHED</b></li>
+                    <li>CHRONOGRAPH</li>
+                    <li>TOP GUN</li>
+                    <li>AUTOMATIC</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="popup perm_identity">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>SIGN INTO IWC</h2>
+            <p>Please sign in here by entering your email address and your password</p>
+            <form action="index_after.html">
+                <ul>
+                    <li>
+                        <label for="userEmail">Email (Required)</label>
+                        <input type="email" id="userEmail" placeholder="Enter Your Email" required>
+                        <p>
+                            <span class="material-icons-outlined">info </span>
+                            Email Validation
+                        </p>
+                    </li>
+                    <li>
+                        <label for="userPW">Password (Required)</label>
+                        <input type="password" id="userPW" placeholder="Enter Your PassWord" required>
+                        <span class="material-icons-outlined toggleVisible">visibility_off</span>
+                    </li>
+                </ul>
+                <input type="submit" value="LOG IN">
+            </form>
+            <a href="forgotPassword.html">Forgot your password?</a>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <h2>CREATE NEW ACCOUNT</h2>
+                    <p>
+                        Register online now to personalize your account,
+                        <span>receive updates or catalogues, manage your
+                            orders and wish lists.</span>
+                    </p>
+                </div>
+                <a href="signUp.html">REGISTER</a>
+            </div>
+        </div>
+    </div>
+    <div class="popup favorite_border">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>WISHLIST</h2>
+            <span>3 ITEMS SAVED</span>
+            <ul>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_048.png" alt="product image">
+                    <div>
+                        <b>BIG PILOT'S WATCH AMG G 63</b>
+                        <small>18 ct Armor Gold® case, Automatic, 46.2 mm</small>
+                        <mark>$ 8,500</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_042.png" alt="product image">
+                    <div>
+                        <b>PILOT'S WATCH MARK XX</b>
+                        <small>Stainless steel case, Automatic, 40.0 mm</small>
+                        <mark>$ 6,150</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_067.png" alt="product image">
+                    <div>
+                        <b>PILOT'S WATCH CHRONOGRAPH 41 TOP GUN OCEANA</b>
+                        <small>Ceramic case, Automatic, 41.9 mm</small>
+                        <mark>$ 11,700</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="popup shopping_bag">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>SHOPPING BAG</h2>
+            <p>Free delivery and return : Ships in 3-5 business days</p>
+            <div>
+                <ul>
+                    <li>
+                        <input type="button" value="remove" class="material-icons-outlined">
+                        <img src="images/productThumbnail_048.png" alt="product image">
+                        <span>IW501201</span>
+                        <b>BIG PILOT'S WATCH AMG G 63</b>
+                        <small>18 ct Armor Gold® case, Automatic, 46.2 mm</small>
+                        <mark>$ 8,500</mark>
+                    </li>
+                    <li>
+                        <input type="button" value="remove" class="material-icons-outlined">
+                        <img src="images/productThumbnail_042.png" alt="product image">
+                        <span>IW328206</span>
+                        <b>PILOT'S WATCH MARK XX</b>
+                        <small>Stainless steel case, Automatic, 40.0 mm</small>
+                        <mark>$ 6,150</mark>
+                    </li>
+                </ul>
+                <div>
+                    <span>
+                        SUBTOTAL
+                        <mark>$ 14,650</mark>
+                    </span>
+                    <span>
+                        DELIVERY
+                        <mark>FREE</mark>
+                    </span>
+                    <span>
+                        TAXES
+                        <mark>To be calculated</mark>
+                    </span>
+                    <span>
+                        TOTAL
+                        <mark>$ 14,650</mark>
+                    </span>
+                    <p>Pay your order by Wire Transfer (only available with phone sales service) or the following online
+                        secured payment methods</p>
+                    <ul>
+                        <li><img src="images/paymentmethod__master.png" alt="master"></li>
+                        <li><img src="images/paymentmethod__union.png" alt="union pay"></li>
+                        <li><img src="images/paymentmethod__visa.png" alt="visa"></li>
+                        <li><img src="images/paymentmethod__amex.png" alt="american express"></li>
+                        <li><img src="images/paymentmethod__apple.png" alt="apple pay"></li>
+                        <li><img src="images/paymentmethod__wecp.png" alt="we chat pay"></li>
+                        <li><img src="images/paymentmethod__ppal.png" alt="paypal"></li>
+                        <li><img src="images/paymentmethod__gpay.png" alt="google pay"></li>
+                        <li><img src="images/paymentmethod__alix.png" alt="ali express pay"></li>
+                    </ul>
+                    <a href="checkout.html">CHECKOUT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup menu">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2><a href="/"><img src="images/logo.svg" alt="logo"></a></h2>
+        </div>
+        <ul>
+            <li><a href="watches.html">WATHCES</a></li>
+            <li><a href="sv_types.html">SERVICES</a></li>
+            <li><a href="findStore.html">STORES</a></li>
+            <li><a href="experience.html">EXPERIENCE</a></li>
+            <li><a href="journal.html">JOURNAL</a></li>
+        </ul>
+        <ol>
+            <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+            <li><a href="sv_extendWarranty.html">Extend Your Warranty</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ol>
+        <div>
+            <span>United States | English</span>
+            <a href="tel:+18004329330">1-800-432-9330</a>
+        </div>
+    </div>
+    <!-- popup -->
+
+    <header class="blackTheme">
+        <div>
+            <div>
+                <span>1-800-432-9330</span>
+                <span>United States | English</span>
+            </div>
+            <ul>
+                <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+                <li><a href="sv_extendWarranty.html">Extend Your Warranty</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <input type="button" value="menu" class="material-icons-outlined mui">
+            <h1><a href="/"><img src="images/logo_wh.svg" alt="iwc"></a></h1>
+            <nav>
+                <input type="button" value="close" class="material-icons-outlined">
+                <ul>
+                    <li><a href="watches.html">WATCHES</a></li>
+                    <li><a href="sv_careAdvice.html">SERVICES</a></li>
+                    <li><a href="findStore.html">STORES</a></li>
+                    <li><a href="experience.html">EXPERIENCE</a></li>
+                    <li><a href="journal.html">JOURNAL</a></li>
+                </ul>
+            </nav>
+            <ul>
+                <li>
+                    <input type="button" value="search" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="perm_identity" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="favorite_border" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="shopping_bag" class="material-icons-outlined utility">
+                </li>
+            </ul>
+        </div>
+        <div class="mui">
+            <div>
+                <input type="button" value="menu" class="material-icons-outlined">
+                <h1><a href="/"><img src="images/logo_wh.svg" alt="iwc"></a></h1>
+                <ul>
+                    <li>
+                        <input type="button" value="search" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="perm_identity" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="favorite_border" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="shopping_bag" class="material-icons-outlined utility">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="svContainer careAdvice">
+        <div>
+            <small>IWC SHAFFHAUSEN SERVICES</small>
+            <h2>CARE ADVICE</h2>
+            <ul class="mCustomScrollbar">
+                <li class="active"><a href="sv_careAdvice.html">CARE ADVICE</a></li>
+                <li><a href="sv_types.html">SERVICE TYPES</a></li>
+                <li><a href="sv_calculator.html">SERVICE PRICE CALCULATOR</a></li>
+                <li><a href="sv_extendWarranty.html">EXTEND YOUR WARRANTY</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="adviceList">
+                <li class="active">
+                    <a href="https://youtu.be/htisAnzHM_0?si=lZsW9Eu7hRNnoH2V" target="_blank">
+                        <img src="images/sv_careAdvice_01.png" alt="care advice">
+                        <small>HOW TO CARE</small>
+                        <h3>HOW TO CARE FOR YOUR IWC LEATHER WATCH STRAP</h3>
+                        <p>The leather strap on your IWC watch needs the same attention as a pair of classic
+                            double-buckles. Proper caring of your leather strap can evolve into a sensuous, tactile
+                            experience.</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="https://youtu.be/FpgS3ITxDPM" target="_blank">
+                        <img src="images/sv_careAdvice_02.png" alt="care advice">
+                        <small>HOW TO CARE</small>
+                        <h3>HOW TO KEEP YOUR IWC LUXURY WATCH SAFE</h3>
+                        <p>Theft isn’t the only hazard for your watch: Mother Nature can wreak havoc too. There are
+                            steps you can take to – hopefully – keep sticky hands and wild weather away from your watch.
+                        </p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="https://youtu.be/c4ddBuvEYmM" target="_blank">
+                        <img src="images/sv_careAdvice_03.png" alt="care advice">
+                        <small>HOW TO CARE</small>
+                        <h3>HOW TO CLEAN YOUR IWC WATCH</h3>
+                        <p>If you wear your watch a lot, it’s going to attract dirt. But don’t reach for that bar of
+                            soap. A little bit of water and elbow grease is enough to keep your timepiece looking great.
+                        </p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="https://youtu.be/gi78hOQw2_E" target="_blank">
+                        <img src="images/sv_careAdvice_04.png" alt="care advice">
+                        <small>HOW TO CARE</small>
+                        <h3>HOW TO CARE FOR YOUR PORTOFINO HAND-WOUND TOURBILLON RETROGRADE</h3>
+                        <p>This majestic watch features three complications that make it an elegant - yet clever -
+                            timepiece: an eight-day power reserve, a flying tourbillon and a retrograde date display.
+                        </p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="https://youtu.be/b1IYXHrTimQ" target="_blank">
+                        <img src="images/sv_careAdvice_05.png" alt="care advice">
+                        <small>HOW TO OPERATE</small>
+                        <h3>HOW TO CORRECTLY WIND YOUR WATCH</h3>
+                        <p>Perhaps winding your watch is part of your morning ritual, or maybe you do it just before
+                            bedtime, but those 20-to-30 twists of the crown are important.</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="https://youtu.be/nSHgyZV-Uck" target="_blank">
+                        <img src="images/sv_careAdvice_06.png" alt="care advice">
+                        <small>HOW TO OPERATE</small>
+                        <h3>HOW TO SET THE PORTUGIESER PERPETUAL CALENDAR</h3>
+                        <p>The perpetual calendar complication on the Portugieser Perpetual Calendar is a true work of
+                            art. Learn how to keep your Portugieser Perpetual Calendar running smoothly for centuries.
+                        </p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="https://youtu.be/JLhWBvtqc1o" target="_blank">
+                        <img src="images/sv_careAdvice_07.png" alt="care advice">
+                        <small>HOW TO OPERATE</small>
+                        <h3>HOW TO SET THE DATE ON YOUR WATCH</h3>
+                        <p>Did you know that you shouldn’t set the date on your watch between 9pm and 3am? Set the date
+                            on your watch for the day before. Want to know why?</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="https://youtu.be/ONwbDUHPh_8" target="_blank">
+                        <img src="images/sv_careAdvice_08.png" alt="care advice">
+                        <small>HOW TO OPERATE</small>
+                        <h3>HOW TO SET THE PORTUGIESER ANNUAL CALENDAR</h3>
+                        <p>Portugieser Annual Calendar automatically displays the date based on the month, and you only
+                            have to adjust it once a year at the end of February.</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="https://youtu.be/U61nDunqOEQ" target="_blank">
+                        <img src="images/sv_careAdvice_09.png" alt="care advice">
+                        <small>HOW TO OPERATE</small>
+                        <h3>HOW TO ADJUST THE PILOT’S WATCH TIMEZONER CHRONOGRAPH</h3>
+                        <p>Push, release and go: those are the basic steps to set the Pilot’s Watch Timezoner
+                            Chronograph.</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="https://youtu.be/B_dvb-AVS80" target="_blank">
+                        <img src="images/sv_careAdvice_10.png" alt="care advice">
+                        <small>HOW TO OPERATE</small>
+                        <h3>HOW TO SET THE PORTUGIESER GRANDE COMPLICATION</h3>
+                        <p>The Portugieser Grande Complication certainly lives up to its name. With 659 parts working in
+                            perfect unison, this complication highlights the art of watchmaking.</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="https://youtu.be/2VeWh3HxxQ4" target="_blank">
+                        <img src="images/sv_careAdvice_11.png" alt="care advice">
+                        <small>HOW TO OPERATE</small>
+                        <h3>HOW TO OPERATE YOUR PORTUGIESER MINUTE REPEATER</h3>
+                        <p>Portugieser Minute Repeater sounds out the hours, quarter hours and minutes - set number of
+                            gongs for each - just by pulling the slide on the side of the case.</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="https://youtu.be/-toh1eYskdY" target="_blank">
+                        <img src="images/sv_careAdvice_12.png" alt="care advice">
+                        <small>HOW TO STRAPS & BRACELETS</small>
+                        <h3>HOW TO CHANGE THE STRAP OF THE PILOT’S CHRONOGRAPH 41 USING THE EASX-CHANGE® SYSTEM</h3>
+                        <p>Our new Pilot’s Watch Chronograph 41 models feature a EasX-CHANGE system, which allows the
+                            wearer the watch owner to quickly and easily change the strap or bracelet.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/-toh1eYskdY" target="_blank">
+                        <img src="images/sv_careAdvice_13.png" alt="care advice">
+                        <small>HOW TO STRAPS & BRACELETS</small>
+                        <h3>HOW TO CHANGE THE STRAP OF THE BIG PILOT’S WATCH 43 USING THE EASX-CHANGE® SYSTEM</h3>
+                        <p>Our new Big Pilot’s Watch 43 models feature a EasX-CHANGE system, which allows the wearer the
+                            watch owner to quickly and easily change the strap or bracelet.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/Q4r1ahhw4jA" target="_blank">
+                        <img src="images/sv_careAdvice_14.png" alt="care advice">
+                        <small>HOW TO STRAPS & BRACELETS</small>
+                        <h3>HOW TO ADJUST YOUR MILANAISE BRACELET</h3>
+                        <p>Portofino models are With its fine wire mesh weave and refined but robust build, the
+                            Milanaise provides a snug fit around with wrist without sacrificing comfort, but proper fit
+                            is key.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/MWNmMB8fNzg" target="_blank">
+                        <img src="images/sv_careAdvice_15.png" alt="care advice">
+                        <small>HOW TO STRAPS & BRACELETS</small>
+                        <h3>HOW TO ADJUST YOUR H-LINK METAL BRACELET</h3>
+                        <p>Discover how to adjust the bracelet of your Portugieser Yatch Club Chronograph with the
+                            EasX-CHANGE system, which allows the wearer the watch owner to quickly and easily change the
+                            strap or bracelet.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/MWNmMB8fNzg" target="_blank">
+                        <img src="images/sv_careAdvice_16.png" alt="care advice">
+                        <small>EXPLAINED</small>
+                        <h3>HOW TO GET YOUR WATCH SERVICED</h3>
+                        <p>Justin speaks with Christoph Bippus about why a watch needs a service, what it entails, and
+                            how frequently you should have one to keep your beloved timepiece working beautifully.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/_hmLxJWlHH0" target="_blank">
+                        <img src="images/sv_careAdvice_17.png" alt="care advice">
+                        <small>EXPLAINED</small>
+                        <h3>WHY INVEST IN A LUXURY WATCH?</h3>
+                        <p>What exactly does the production process of a luxury timepiece look like? Markus Buehler from
+                            IWC’s Watch Movement Assembly Team reveals some fascinating production details.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/CLrFrW04Kwk" target="_blank">
+                        <img src="images/sv_careAdvice_18.png" alt="care advice">
+                        <small>HOW TO STRAPS & BRACELETS</small>
+                        <h3>AUTOMATIC OR HAND WOUND? HOW DOES ONE DECIDE?</h3>
+                        <p>Whether to buy a mechanical watch with an automatic or hand-wound movement. IWC Watchmaker
+                            Florian Salzer explains the differences between the two movements.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/IVelooESslI" target="_blank">
+                        <img src="images/sv_careAdvice_19.png" alt="care advice">
+                        <small>EXPLAINED</small>
+                        <h3>HOW TO USE A CHRONOGRAPH</h3>
+                        <p>How exactly does a chronograph work? And what types of chronographs are there? Expertiser
+                            Sabrina Herzog clarifies the differences between the basic, the double, and the flyback
+                            chronograph.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/5wqigy1Iowc" target="_blank">
+                        <img src="images/sv_careAdvice_20.png" alt="care advice">
+                        <small>EXPLAINED</small>
+                        <h3>HOW TO ENSURE WATER RESISTANCE?</h3>
+                        <p>What does it mean for a diving watch to be water resistant? And how does one ensure that it
+                            remains that way? Diver Mark Levinson on why he chooses to rely on his Aquatimer.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/yKdqdYvbUQ0" target="_blank">
+                        <img src="images/sv_careAdvice_21.png" alt="care advice">
+                        <small>EXPLAINED</small>
+                        <h3>HOW TO REQUEST A CERTIFICATE OF AUTHENTICITY</h3>
+                        <p>Elvira Judas from IWC’s Customer Service’s “Team Vintage” shares some insights into the
+                            authentication process, and discloses how many specialists are involved.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/BPP-0BYAFYQ" target="_blank">
+                        <img src="images/sv_careAdvice_22.png" alt="care advice">
+                        <small>EXPLAINED</small>
+                        <h3>MATERIALS: CERATANIUM</h3>
+                        <p>Ceratanium® is one of the more innovative materials used in watchmaking and IWC exclusive.
+                            Lorenz explains what this material is, how it was developed and what makes it so special.
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/H73uhiIMOa4" target="_blank">
+                        <img src="images/sv_careAdvice_23.png" alt="care advice">
+                        <small>EXPLAINED</small>
+                        <h3>MATERIALS: BRONZE</h3>
+                        <p>IWC’s bronze is known for its special color and the beautiful patina that evolves over time.
+                            Lorenz tells us what makes our bronze so special and why patience is a virtue when it comes
+                            to wearing it.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/xaxJAQFr3so" target="_blank">
+                        <img src="images/sv_careAdvice_24.png" alt="care advice">
+                        <small>EXPLAINED</small>
+                        <h3>INTRO TO MATERIALS</h3>
+                        <p>What materials do we use for our watch cases and why? Dr. Lorenz Brunner, Department Head of
+                            Research and Innovation gives a primer on our materials and the work involved making them
+                            come to life.</p>
+                    </a>
+                </li>
+            </ul>
+            <input type="button" value="VIEW MORE" class="btnMore active">
+        </div>
+    </div>
+
+    <a href="#" class="btnTop">
+        <span class="material-icons-outlined">
+            arrow_upward
+        </span>
+    </a>
+    <footer>
+        <div>
+            <div>
+                <h2 class="unfold">CUSTOMER CARE</h2>
+                <ul>
+                    <li><a href="conditionOfSale.html">Condition of Sale</a></li>
+                    <li><a href="warranty_international.html">Warranty</a></li>
+                    <li><a href="registerTimepiece.html">Register Timepiece</a></li>
+                    <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+                    <li><a href="faq_service.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="unfold">PRIVACY&TERMS</h2>
+                <ul>
+                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                    <li><a href="termsOfUse.html">Terms of Use</a></li>
+                    <li><a href="accessibility.html">Accessibility</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="unfold">MADE AT IWC</h2>
+                <ul>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="sustainability.html">Sustainability</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+                <div>
+                    <input type="email" placeholder="Email Address (Required)">
+                    <input type="button" value="east" class="material-icons-outlined">
+                </div>
+                <a href="contactUs.html" class="btn-square">CONTACT TO US</a>
+            </div>
+        </div>
+        <div>
+            <p>© International Watch Company. 2024</p>
+            <ul>
+                <li><a href="https://www.facebook.com/IWCWatches">facebook</a></li>
+                <li><a href="http://www.instagram.com/iwcwatches">instagram</a></li>
+                <li><a href="http://www.x.com/iwc">x</a></li>
+                <li><a href="http://www.youtube.com/iwcwatches">youtube</a></li>
+                <li><a href="https://www.pinterest.com/iwcwatches/">pinterest</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

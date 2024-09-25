@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iwc</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/iwc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+
+<body>
+    <div class="popup search">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>TYPE IN THE KEY WORDS</h2>
+            <div>
+                <input type="search" placeholder="Please Enter Your Search Term">
+                <input type="submit" value="SEARCH">
+                <ul>
+                    <li><b>MOST COMMONLY SEARCHED</b></li>
+                    <li>CHRONOGRAPH</li>
+                    <li>TOP GUN</li>
+                    <li>AUTOMATIC</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="popup perm_identity">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>SIGN INTO IWC</h2>
+            <p>Please sign in here by entering your email address and your password</p>
+            <form action="index_after.html">
+                <ul>
+                    <li>
+                        <label for="userEmail">Email (Required)</label>
+                        <input type="email" id="userEmail" placeholder="Enter Your Email" required>
+                        <p>
+                            <span class="material-icons-outlined">info </span>
+                            Email Validation
+                        </p>
+                    </li>
+                    <li>
+                        <label for="userPW">Password (Required)</label>
+                        <input type="password" id="userPW" placeholder="Enter Your PassWord" required>
+                        <span class="material-icons-outlined toggleVisible">visibility_off</span>
+                    </li>
+                </ul>
+                <input type="submit" value="LOG IN">
+            </form>
+            <a href="forgotPassword.html">Forgot your password?</a>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <h2>CREATE NEW ACCOUNT</h2>
+                    <p>
+                        Register online now to personalize your account,
+                        <span>receive updates or catalogues, manage your
+                            orders and wish lists.</span>
+                    </p>
+                </div>
+                <a href="signUp.html">REGISTER</a>
+            </div>
+        </div>
+    </div>
+    <div class="popup favorite_border">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>WISHLIST</h2>
+            <span class="remainItem">3 ITEMS SAVED</span>
+            <ul>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_048.png" alt="product image">
+                    <div>
+                        <b>BIG PILOT'S WATCH AMG G 63</b>
+                        <small>18 ct Armor Gold® case, Automatic, 46.2 mm</small>
+                        <mark>$ 8,500</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_042.png" alt="product image">
+                    <div>
+                        <b>PILOT'S WATCH MARK XX</b>
+                        <small>Stainless steel case, Automatic, 40.0 mm</small>
+                        <mark>$ 6,150</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+                <li>
+                    <input type="button" value="remove" class="material-icons-outlined">
+                    <img src="images/productThumbnail_067.png" alt="product image">
+                    <div>
+                        <b>PILOT'S WATCH CHRONOGRAPH 41 TOP GUN OCEANA</b>
+                        <small>Ceramic case, Automatic, 41.9 mm</small>
+                        <mark>$ 11,700</mark>
+                    </div>
+                    <input type="button" value="ADD TO BAG">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="popup shopping_bag">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2>SHOPPING BAG</h2>
+            <p>Free delivery and return : Ships in 3-5 business days</p>
+            <div>
+                <ul>
+                    <li>
+                        <input type="button" value="remove" class="material-icons-outlined">
+                        <img src="images/productThumbnail_048.png" alt="product image">
+                        <span>IW501201</span>
+                        <b>BIG PILOT'S WATCH AMG G 63</b>
+                        <small>18 ct Armor Gold® case, Automatic, 46.2 mm</small>
+                        <mark>$ 8,500</mark>
+                    </li>
+                    <li>
+                        <input type="button" value="remove" class="material-icons-outlined">
+                        <img src="images/productThumbnail_042.png" alt="product image">
+                        <span>IW328206</span>
+                        <b>PILOT'S WATCH MARK XX</b>
+                        <small>Stainless steel case, Automatic, 40.0 mm</small>
+                        <mark>$ 6,150</mark>
+                    </li>
+                </ul>
+                <div>
+                    <span>
+                        SUBTOTAL
+                        <mark>$ 14,650</mark>
+                    </span>
+                    <span>
+                        DELIVERY
+                        <mark>FREE</mark>
+                    </span>
+                    <span>
+                        TAXES
+                        <mark>To be calculated</mark>
+                    </span>
+                    <span>
+                        TOTAL
+                        <mark>$ 14,650</mark>
+                    </span>
+                    <p>Pay your order by Wire Transfer (only available with phone sales service) or the following online
+                        secured payment methods</p>
+                    <ul>
+                        <li><img src="images/paymentmethod__master.png" alt="master"></li>
+                        <li><img src="images/paymentmethod__union.png" alt="union pay"></li>
+                        <li><img src="images/paymentmethod__visa.png" alt="visa"></li>
+                        <li><img src="images/paymentmethod__amex.png" alt="american express"></li>
+                        <li><img src="images/paymentmethod__apple.png" alt="apple pay"></li>
+                        <li><img src="images/paymentmethod__wecp.png" alt="we chat pay"></li>
+                        <li><img src="images/paymentmethod__ppal.png" alt="paypal"></li>
+                        <li><img src="images/paymentmethod__gpay.png" alt="google pay"></li>
+                        <li><img src="images/paymentmethod__alix.png" alt="ali express pay"></li>
+                    </ul>
+                    <a href="checkout.html">CHECKOUT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup menu">
+        <div>
+            <input type="button" value="close" class="material-icons-outlined">
+            <h2><a href="/"><img src="images/logo.svg" alt="logo"></a></h2>
+        </div>
+        <ul>
+            <li><a href="watches.html">WATHCES</a></li>
+            <li><a href="sv_types.html">SERVICES</a></li>
+            <li><a href="findStore.html">STORES</a></li>
+            <li><a href="experience.html">EXPERIENCE</a></li>
+            <li><a href="journal.html">JOURNAL</a></li>
+        </ul>
+        <ol>
+            <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+            <li><a href="sv_extendWarranty.html">Extend Your Warranty</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ol>
+        <div>
+            <span>United States | English</span>
+            <a href="tel:+18004329330">1-800-432-9330</a>
+        </div>
+    </div>
+    <!-- popup -->
+
+    <header class="blackTheme">
+        <div>
+            <div>
+                <span>1-800-432-9330</span>
+                <span>United States | English</span>
+            </div>
+            <ul>
+                <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+                <li><a href="sv_extendWarranty.html">Extend Your Warranty</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <input type="button" value="menu" class="material-icons-outlined mui">
+            <h1><a href="/"><img src="images/logo_wh.svg" alt="iwc"></a></h1>
+            <nav>
+                <input type="button" value="close" class="material-icons-outlined">
+                <ul>
+                    <li><a href="watches.html">WATCHES</a></li>
+                    <li><a href="sv_careAdvice.html">SERVICES</a></li>
+                    <li><a href="findStore.html">STORES</a></li>
+                    <li><a href="experience.html">EXPERIENCE</a></li>
+                    <li><a href="journal.html">JOURNAL</a></li>
+                </ul>
+            </nav>
+            <ul>
+                <li>
+                    <input type="button" value="search" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="perm_identity" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="favorite_border" class="material-icons-outlined utility">
+                </li>
+                <li>
+                    <input type="button" value="shopping_bag" class="material-icons-outlined utility">
+                </li>
+            </ul>
+        </div>
+        <div class="mui">
+            <div>
+                <input type="button" value="menu" class="material-icons-outlined">
+                <h1><a href="/"><img src="images/logo_wh.svg" alt="iwc"></a></h1>
+                <ul>
+                    <li>
+                        <input type="button" value="search" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="perm_identity" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="favorite_border" class="material-icons-outlined utility">
+                    </li>
+                    <li>
+                        <input type="button" value="shopping_bag" class="material-icons-outlined utility">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="journalContainer">
+        <div>
+            <small>DISCOVER IWC SCHAFFHAUSEN’s HIGHLIGHTS</small>
+            <h2>JOURNAL</h2>
+            <div>
+                <div>
+                    <img src="images/article_01.png" alt="article_01">
+                    <small>CREATORS & PARTNERS</small>
+                    <h3>CHASING THE EXTREME: A DAD’S NORTH POLE MARATHON</h3>
+                    <p>Seth Wise has a dream: To race at the top of the world, literally. Find out how the father of
+                        three prepares for the world’s coolest marathon.</p>
+                    <span>
+                        <span class="material-icons-outlined">
+                            timer
+                        </span>
+                        4 min
+                    </span>
+                    <a href="article_01.html">
+                        <span class="material-icons-outlined">chevron_right</span>
+                        READ MORE
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <img src="images/article_02.png" alt="article_02">
+                        <small>CREATORS & PARTNERS</small>
+                        <h3>THE PERFECT FLOW</h3>
+                        <p>In a performance-driven world, vicky piria shows us the human side of speed. where instinct
+                            and reflexes never race against time. they master it.</p>
+                        <span>
+                            <span class="material-icons-outlined">
+                                timer
+                            </span>
+                            3 min
+                        </span>
+                        <a href="article_02.html">
+                            <span class="material-icons-outlined">chevron_right</span>
+                            READ MORE
+                        </a>
+                    </li>
+                    <li>
+                        <img src="images/article_04.png" alt="article_04">
+                        <small>CREATORS & PARTNERS</small>
+                        <h3>MADE TO LAST</h3>
+                        <p>Meet Miguel Sanchez, the Founder and creative director of cafe leather, as he shares insights
+                            from his journey, wearing the big pilot’s watch top gun edition “mojave desert” IW506003 and
+                            exploring new materials and fabrics.</p>
+                        <span>
+                            <span class="material-icons-outlined">
+                                timer
+                            </span>
+                            3 min
+                        </span>
+                        <a href="article_04.html">
+                            <span class="material-icons-outlined">chevron_right</span>
+                            READ MORE
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="images/article_03.png" alt="article_03">
+                        <small>CREATORS & PARTNERS</small>
+                        <h3>“SLICK” TIME TRAVELER</h3>
+                        <p>Join pilot, Philanthropist and entrepreneur John Baum as he takes his pilot’s watch timezoner
+                            edition “le petit prince” ref. IW395503 on a flight over the big apple.</p>
+                        <span>
+                            <span class="material-icons-outlined">
+                                timer
+                            </span>
+                            3 min
+                        </span>
+                        <a href="article_03.html">
+                            <span class="material-icons-outlined">chevron_right</span>
+                            READ MORE
+                        </a>
+                    </li>
+                    <li>
+                        <img src="images/article_05.png" alt="article_05">
+                        <small>CREATORS & PARTNERS</small>
+                        <h3>HEART OF GOLD</h3>
+                        <p>Meet Jagger Eaton: The accomplished pro skaterboarder, TV personality and IWC brand
+                            ambassador shares insights into his journey and drive to make a difference.</p>
+                        <span>
+                            <span class="material-icons-outlined">
+                                timer
+                            </span>
+                            2 min
+                        </span>
+                        <a href="article_05.html">
+                            <span class="material-icons-outlined">chevron_right</span>
+                            READ MORE
+                        </a>
+                    </li>
+                    <li>
+                        <img src="images/article_06.png" alt="article_06">
+                        <small>CREATORS & PARTNERS</small>
+                        <h3>GISELE BÜNDCHEN: “SIMPLICITY IS THE NEW LUXURY”</h3>
+                        <p>The supermodel’s new role as advisor to IWC’s sustainability committee.</p>
+                        <span>
+                            <span class="material-icons-outlined">
+                                timer
+                            </span>
+                            2 min
+                        </span>
+                        <a href="article_06.html">
+                            <span class="material-icons-outlined">chevron_right</span>
+                            READ MORE
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <div>
+                    <img src="images/article_07.png" alt="article_07">
+                    <small>LIFESTYLE</small>
+                    <h3>RUNNING WITH TIME: FROM THE RHINE FALLS TO POPPY FIELDS</h3>
+                    <p>Join landscape photographer Joni Hedinger on his run through IWC’s hometown, SCHAFFHAUSEN.</p>
+                    <span>
+                        <span class="material-icons-outlined">
+                            timer
+                        </span>
+                        3 min
+                    </span>
+                    <a href="article_07.html">
+                        <span class="material-icons-outlined">chevron_right</span>
+                        READ MORE
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <img src="images/article_08.png" alt="article_08">
+                        <small>LIFESTYLE</small>
+                        <h3>CAFÉ LEATHER – TIMELESS ESSENTIALS</h3>
+                        <p>For Miguel Sánchez, essentials are key in life. The pillar of everything. Discover how he combines essential IWC timepieces with nearly every look.</p>
+                        <span>
+                            <span class="material-icons-outlined">
+                                timer
+                            </span>
+                            3 min
+                        </span>
+                        <a href="article_08.html">
+                            <span class="material-icons-outlined">chevron_right</span>
+                            READ MORE
+                        </a>
+                    </li>
+                    <li>
+                        <img src="images/article_10.png" alt="article_10">
+                        <small>LIFESTYLE</small>
+                        <h3>GISELE’S ART OF GIVING TIME</h3>
+                        <p>Discover how supermodel and powerhouse mom Gisele Bündchen manages her packed schedule and finds “Me Time”</p>
+                        <span>
+                            <span class="material-icons-outlined">
+                                timer
+                            </span>
+                            3 min
+                        </span>
+                        <a href="article_10.html">
+                            <span class="material-icons-outlined">chevron_right</span>
+                            READ MORE
+                        </a>
+                    </li>
+                    <li>
+                        <img src="images/article_12.png" alt="article_12">
+                        <small>LIFESTYLE</small>
+                        <h3>EXQUISITE JOURNEY TO NAMIBIA</h3>
+                        <p>Join selft-taught photographer Madeline Lu as she reveals her favorite spots, accommodations, and activities in the namib desert.</p>
+                        <span>
+                            <span class="material-icons-outlined">
+                                timer
+                            </span>
+                            3 min
+                        </span>
+                        <a href="article_12.html">
+                            <span class="material-icons-outlined">chevron_right</span>
+                            READ MORE
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="images/article_09.png" alt="article_09">
+                        <small>LIFESTYLE</small>
+                        <h3>A DAY IN ZERMATT</h3>
+                        <p>Fllow swiss landscape photographer and alpinist Joni Hedinger as he explores the surroundings of the world’s most photographed mountain, the matterhorn.</p>
+                        <span>
+                            <span class="material-icons-outlined">
+                                timer
+                            </span>
+                            2 min
+                        </span>
+                        <a href="article_09.html">
+                            <span class="material-icons-outlined">chevron_right</span>
+                            READ MORE
+                        </a>
+                    </li>
+                    <li>
+                        <img src="images/article_11.png" alt="article_11">
+                        <small>LIFESTYLE</small>
+                        <h3>AGAINST THE GRAIN</h3>
+                        <p>Meet IWC brand ambassador and zurich-native star chef Nenad Mlinarevic. Find out more about his latest projects at zurich main station and why he values team spirit above all.</p>
+                        <span>
+                            <span class="material-icons-outlined">
+                                timer
+                            </span>
+                            2 min
+                        </span>
+                        <a href="article_11.html">
+                            <span class="material-icons-outlined">chevron_right</span>
+                            READ MORE
+                        </a>
+                    </li>
+                    <li>
+                        <img src="images/article_13.png" alt="article_13">
+                        <small>LIFESTYLE</small>
+                        <h3>LAURA KRAIHAMER TAKES ON AROSA</h3>
+                        <p>Meet the austrian racing driver and IWC ambassador as she debuts at arosa classccar, behind the wheel of the iconict 1955 mercedes-benz 300 SL gullwing..</p>
+                        <span>
+                            <span class="material-icons-outlined">
+                                timer
+                            </span>
+                            2 min
+                        </span>
+                        <a href="article_13.html">
+                            <span class="material-icons-outlined">chevron_right</span>
+                            READ MORE
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="btnTop">
+        <span class="material-icons-outlined">
+            arrow_upward
+        </span>
+    </a>
+    <footer>
+        <div>
+            <div>
+                <h2 class="unfold">CUSTOMER CARE</h2>
+                <ul>
+                    <li><a href="conditionOfSale.html">Condition of Sale</a></li>
+                    <li><a href="warranty_international.html">Warranty</a></li>
+                    <li><a href="registerTimepiece.html">Register Timepiece</a></li>
+                    <li><a href="tradeIn.html">Trade In / Pre-Owned</a></li>
+                    <li><a href="faq_service.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="unfold">PRIVACY&TERMS</h2>
+                <ul>
+                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                    <li><a href="termsOfUse.html">Terms of Use</a></li>
+                    <li><a href="accessibility.html">Accessibility</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="unfold">MADE AT IWC</h2>
+                <ul>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="sustainability.html">Sustainability</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+                <div>
+                    <input type="email" placeholder="Email Address (Required)">
+                    <input type="button" value="east" class="material-icons-outlined">
+                </div>
+                <a href="contactUs.html" class="btn-square">CONTACT TO US</a>
+            </div>
+        </div>
+        <div>
+            <p>© International Watch Company. 2024</p>
+            <ul>
+                <li><a href="https://www.facebook.com/IWCWatches">facebook</a></li>
+                <li><a href="http://www.instagram.com/iwcwatches">instagram</a></li>
+                <li><a href="http://www.x.com/iwc">x</a></li>
+                <li><a href="http://www.youtube.com/iwcwatches">youtube</a></li>
+                <li><a href="https://www.pinterest.com/iwcwatches/">pinterest</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
