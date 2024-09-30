@@ -230,13 +230,14 @@ function alsoSlider() {
   var respSlider=$('.alsoslider').bxSlider({
     minSlides: 1,
     maxSlides: 3,
+    //slideWidth: 300,
+    //slideMargin: 10,
     infiniteLoop: false,
     controls: true,
     pager: true,
     hideControlOnEnd: true,
     wrapperClass: 'alsoWrapper'
   })
-
   $(window).resize(function(){
     currentViewport=$(window).width();
 
