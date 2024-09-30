@@ -11960,6 +11960,9 @@
         top: 0;
         left: 0;
     }
+    .detailContainer>div:last-of-type .bx-controls{
+        display: none;
+    }
 
     /* productDetail fin */
 

@@ -230,6 +230,7 @@ function alsoSlider() {
   var respSlider=$('.alsoslider').bxSlider({
     minSlides: 1,
     maxSlides: 3,
+    //moveSlides: 1,
     //slideWidth: 300,
     //slideMargin: 10,
     infiniteLoop: false,
@@ -238,13 +239,16 @@ function alsoSlider() {
     hideControlOnEnd: true,
     wrapperClass: 'alsoWrapper'
   })
+
+  respSlider.destroySlider();
+
   $(window).resize(function(){
     currentViewport=$(window).width();
 
-    if(currentViewport>=768){
-      respSlider.destroySlider();
-    }else{
+    if(currentViewport<768){
       respSlider.reloadSlider();
+    }else{
+      respSlider.destroySlider();
     }
   })
 }
